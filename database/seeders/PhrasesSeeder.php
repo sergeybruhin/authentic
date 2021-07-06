@@ -16,10 +16,36 @@ class PhrasesSeeder extends Seeder
      */
     public function run()
     {
+        $phrases = [
+            'Автобус едет по дороге',
+            'Девочка едет на велосипеде',
+            'Деовчка играет на гитаре',
+            'Девочка играет на компьтере',
+            'Девочка пьёт молоко',
+            'Девочка играет на планшете',
+            'Мальчик и девочка играют в конструктор',
+            'Мальчик едет на машине',
+            'Мальчик едет на поезде',
+            'Мальчик играет в машинки',
+            'Мальчик едет на велосипеде',
+            'Мальчик и девочка играют в куклы',
+            'Мальчик играет в машинки',
+            'Мальчик играет на гитаре',
+            'Мальчик играет на компьютере',
+            'Поезд едет по рельсам',
+        ];
+
         $faker = Factory::create();
-        Phrase::factory()->count(5)->afterCreating(function($phrase) use ($faker) {
-            $tag = Tag::find($faker->numberBetween(1,20));
-            $phrase->tags()->save($tag);
-        })->create();
+
+        foreach ($phrases as $phrase) {
+            $phraseCreated = new Phrase();
+            $phraseCreated->text = $phrase;
+            $phraseCreated->image = 'https://picsum.photos/id/1060/640/480';
+            $phraseCreated->save();
+
+            $tag = Tag::find($faker->numberBetween(1, 20));
+            $phraseCreated->tags()->save($tag);
+        }
+
     }
 }

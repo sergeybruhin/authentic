@@ -9,7 +9,7 @@ class PhraseController extends Controller
 {
     public function show($id) {
         $phrase = Phrase::findOrFail($id);
-        return view('phrase')
+        return view('pages.phrase.master')
             ->with(compact('phrase'));
     }
 }

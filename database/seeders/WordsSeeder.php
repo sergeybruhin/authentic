@@ -16,10 +16,33 @@ class WordsSeeder extends Seeder
      */
     public function run()
     {
+
+        $words = [
+            'яблоко',
+            'груша',
+            'киви',
+            'апельсин',
+            'лимон',
+            'ананас',
+            'банан',
+            'персик',
+            'виноград',
+            'арбуз',
+            'малина',
+            'клубника'
+        ];
+
         $faker = Factory::create();
-        Word::factory()->count(5)->afterCreating(function($word) use ($faker) {
+
+        foreach ($words as $word) {
+            $wordCreated = new Word();
+            $wordCreated->text = $word;
+            $wordCreated->image = 'https://picsum.photos/id/1060/640/480';
+            $wordCreated->save();
+
             $tag = Tag::find($faker->numberBetween(1,20));
-            $word->tags()->save($tag);
-        })->create();
+            $wordCreated->tags()->save($tag);
+        }
+
     }
 }

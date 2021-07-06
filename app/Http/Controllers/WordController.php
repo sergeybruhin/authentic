@@ -8,7 +8,7 @@ class WordController extends Controller
 {
     public function show($id) {
         $word = Word::findOrFail($id);
-        return view('word')
+        return view('pages.word.master')
             ->with(compact('word'));
     }
 }
