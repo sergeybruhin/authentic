@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PageController::class, 'home'])->name('home');
-
 Route::get('phrases/{id}', [PhraseController::class, 'show'])->name('phrases.show');
 Route::get('words/{id}', [WordController::class, 'show'])->name('words.show');
 
