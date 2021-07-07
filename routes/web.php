@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\PhraseController;
 use App\Http\Controllers\WordController;
 use Illuminate\Support\Facades\Route;
@@ -15,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [PageController::class, 'home'])->name('home');
 
 Route::get('phrases/{id}', [PhraseController::class, 'show'])->name('phrases.show');
 Route::get('words/{id}', [WordController::class, 'show'])->name('words.show');
