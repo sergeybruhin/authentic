@@ -4,6 +4,8 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PhraseController;
 use App\Http\Controllers\WordController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,34 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('phrases/{id}', [PhraseController::class, 'show'])->name('phrases.show');
-Route::get('words/{id}', [WordController::class, 'show'])->name('words.show');
 
+Route::prefix('phrases')
+    ->name('phrases.')
+    ->group(function () {
+        Route::get('/', [PhraseController::class, 'index'])->name('index');
+        Route::get('{id}', [PhraseController::class, 'show'])->name('show');
+    });
+
+
+Route::prefix('words')
+    ->name('words.')
+    ->group(function () {
+        Route::get('/', [WordController::class, 'index'])->name('index');
+        Route::get('{id}', [WordController::class, 'show'])->name('show');
+    });
+
+
+Route::prefix('collections')
+    ->name('collections.')
+    ->group(function () {
+        Route::get('/', [CollectionController::class, 'index'])->name('index');
+        Route::get('{id}', [CollectionController::class, 'show'])->name('show');
+    });
+
+
+Route::prefix('tags')
+    ->name('tags.')
+    ->group(function () {
+        Route::get('/', [TagController::class, 'index'])->name('index');
+        Route::get('{id}', [TagController::class, 'show'])->name('show');
+    });

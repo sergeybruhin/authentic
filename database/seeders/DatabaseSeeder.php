@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TagsSeeder::class);
         $this->call(WordsSeeder::class);
         $this->call(PhrasesSeeder::class);
+        $this->call(CollectionsSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }
