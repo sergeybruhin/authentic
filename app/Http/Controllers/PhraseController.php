@@ -26,7 +26,22 @@ class PhraseController extends Controller
     public function show($id): View
     {
         $phrase = Phrase::findOrFail($id);
+        $previousPhrase = null;
+        $nextPhrase = null;
+
+        if ($phrase) {
+            // get previous user id
+            $previousId = Phrase::where('id', '<', $phrase->id)->max('id');
+            $previousPhrase = Phrase::find($previousId);
+
+            // get next user id
+            $nextId = Phrase::where('id', '>', $phrase->id)->min('id');
+            $nextPhrase = Phrase::find($nextId);
+        }
+
         return view('pages.phrase.master')
-            ->with(compact('phrase'));
+            ->with(compact('phrase'))
+            ->with(compact('previousPhrase'))
+            ->with(compact('nextPhrase'));
     }
 }

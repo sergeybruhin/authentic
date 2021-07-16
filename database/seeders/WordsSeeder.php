@@ -33,15 +33,17 @@ class WordsSeeder extends Seeder
         ];
 
         $faker = Factory::create();
-
+        $i = 1000;
         foreach ($words as $word) {
+
             $wordCreated = new Word();
             $wordCreated->text = $word;
-            $wordCreated->image = 'https://picsum.photos/id/1060/640/480';
+            $wordCreated->image = 'https://picsum.photos/id/' . $i.'/640/480';
             $wordCreated->save();
 
             $tag = Tag::find($faker->numberBetween(1,20));
             $wordCreated->tags()->save($tag);
+            $i++;
         }
 
     }

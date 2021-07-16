@@ -10,4 +10,16 @@ class Word extends Model
 {
     use HasFactory;
     use Taggable;
+
+    protected $appends = ['next', 'previous'];
+
+    public function getNextAttribute()
+    {
+        return $this->where('id', '>', $this->id)->orderBy('id','asc')->first();
+    }
+
+    public function getPreviousAttribute()
+    {
+        return $this->where('id', '<', $this->id)->orderBy('id','asc')->first();
+    }
 }

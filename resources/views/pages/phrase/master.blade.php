@@ -11,4 +11,18 @@
             </div>
         </div>
     </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col">
+                @if($previousPhrase)
+                    <a class="btn btn-light btn-lg text-uppercase" href="{{ route('phrases.show', $previousPhrase->id) }}">👈 <span class="mx-2"></span>{{ $previousPhrase->text}}</a>
+                @endif
+            </div>
+            <div class="col text-end">
+                @if($nextPhrase)
+                    <a class="btn btn-light btn-lg text-uppercase" href="{{ route('phrases.show', $nextPhrase->id) }}">{{ $nextPhrase->text }} 👉</a>
+                @endif
+            </div>
+        </div>
+    </div>
 @endsection
