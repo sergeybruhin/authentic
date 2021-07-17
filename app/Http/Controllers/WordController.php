@@ -13,7 +13,7 @@ class WordController extends Controller
      */
     public function index(): View
     {
-        $words = Word::all();
+        $words = Word::paginate(12);
         return view('pages.words.master')
             ->with(compact('words'));
     }

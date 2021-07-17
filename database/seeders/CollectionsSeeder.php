@@ -30,6 +30,8 @@ class CollectionsSeeder extends Seeder
             $collectionCreated->name = $collection;
             $collectionCreated->slug = Str::slug($collection);
             $collectionCreated->save();
+
+
         }
     }
 }

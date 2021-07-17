@@ -13,9 +13,9 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            @forelse($collections as $collection)
+            @forelse($wordCollections as $wordCollection)
                 <div class="col">
-                    @include('templates.collection.preview.master',['collection' => $collection])
+                    @include('templates.word-collection.preview.master',['wordCollection' => $wordCollection])
                 </div>
             @empty
                 <div class="col">

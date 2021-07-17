@@ -31,7 +31,7 @@
         </a>
         <a href="{{ route('words.index') }}" class="text-white">Слова</a>
         <a href="{{ route('phrases.index') }}" class="text-white">Фразы</a>
-        <a href="{{ route('collections.index') }}" class="text-white">Коллекции</a>
+        <a href="{{ route('wordCollections.index') }}" class="text-white">Коллекции слов</a>
         <a href="{{ route('tags.index') }}" class="text-white">Теги</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                 aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

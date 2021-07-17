@@ -14,7 +14,7 @@ class PhraseController extends Controller
      */
     public function index(): View
     {
-        $phrases = Phrase::all();
+        $phrases = Phrase::paginate(12);
         return view('pages.phrases.master')
             ->with(compact('phrases'));
     }

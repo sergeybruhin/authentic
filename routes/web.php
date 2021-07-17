@@ -4,7 +4,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PhraseController;
 use App\Http\Controllers\WordController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\WordCollectionController;
 use App\Http\Controllers\TagController;
 
 /*
@@ -37,11 +37,11 @@ Route::prefix('words')
     });
 
 
-Route::prefix('collections')
-    ->name('collections.')
+Route::prefix('word-collections')
+    ->name('wordCollections.')
     ->group(function () {
-        Route::get('/', [CollectionController::class, 'index'])->name('index');
-        Route::get('{id}', [CollectionController::class, 'show'])->name('show');
+        Route::get('/', [WordCollectionController::class, 'index'])->name('index');
+        Route::get('{id}', [WordCollectionController::class, 'show'])->name('show');
     });
 
 

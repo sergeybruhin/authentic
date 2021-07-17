@@ -18,4 +18,5 @@ class Tag extends Model
     {
         return $this->morphTo();
     }
+
 }

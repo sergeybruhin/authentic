@@ -11,19 +11,26 @@
 @section('content')
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row">
 
             @forelse($words as $word)
-                <div class="col">
+                <div class="col-3 pb-3">
                     @include('templates.word.preview.master',['word' => $word])
                 </div>
             @empty
-                <div class="col">
+                <div class="col-3">
                     <h3>Нет данных</h3>
                 </div>
             @endforelse
         </div>
 
+    </div>
+    <div class="container">
+        <div class="row align-items-center my-4">
+            <div class="col ">
+                {{ $words->links() }}
+            </div>
+        </div>
     </div>
 
 @endsection

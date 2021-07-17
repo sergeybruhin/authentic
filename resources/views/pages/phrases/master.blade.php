@@ -11,10 +11,10 @@
 @section('content')
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row">
 
             @forelse($phrases as $phrase)
-                <div class="col">
+                <div class="col-3 pb-3">
                     @include('templates.phrase.preview.master',['phrase' => $phrase])
                 </div>
             @empty
@@ -24,6 +24,13 @@
             @endforelse
         </div>
 
+    </div>
+    <div class="container">
+        <div class="row align-items-center my-4">
+            <div class="col ">
+                {{ $phrases->links() }}
+            </div>
+        </div>
     </div>
 
 @endsection

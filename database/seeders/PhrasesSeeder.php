@@ -37,7 +37,7 @@ class PhrasesSeeder extends Seeder
 
         $faker = Factory::create();
 
-        $i = 1000;
+        $i = 500;
         foreach ($phrases as $phrase) {
             $phraseCreated = new Phrase();
             $phraseCreated->text = $phrase;

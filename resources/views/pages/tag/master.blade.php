@@ -13,8 +13,11 @@
 
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-            <p>Контент</p>
+{{--            {{ dd($tag->taggable) }}--}}
+{{--            @forelse($tag-> as $taggable)--}}
+{{--                {{ dd($taggable) }}--}}
+{{--            @empty--}}
+{{--            @endforelse--}}
         </div>
     </div>
 

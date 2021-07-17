@@ -14,9 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(TagsSeeder::class);
+//        $this->call(CollectionsSeeder::class);
+        $this->call(WordCollectionSeeder::class);
         $this->call(WordsSeeder::class);
         $this->call(PhrasesSeeder::class);
-        $this->call(CollectionsSeeder::class);
+
         // \App\Models\User::factory(10)->create();
     }
 }
