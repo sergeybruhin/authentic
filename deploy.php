@@ -2,10 +2,16 @@
 
 namespace Deployer;
 
+
+use Dotenv\Dotenv;
 use Illuminate\Support\Facades\Config;
 
 require 'recipe/laravel.php';
 
+//set('dotenv', '{{current_path}}/.env');
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 // Project name
 set('application', 'authentic');
 
@@ -25,9 +31,9 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host(Config::get('service.deploy.host'))
-    ->set('deploy_path', Config::get('services.deploy.path'))
-    ->set('http_user', Config::get('services.deploy.http_user'))
+host($_ENV['DEPLOY_HOST'])
+    ->set('deploy_path', $_ENV['DEPLOY_PATH'])
+    ->set('http_user', $_ENV['DEPLOY_HTTP_USER'])
     ->set('branch', 'master');
 
 
