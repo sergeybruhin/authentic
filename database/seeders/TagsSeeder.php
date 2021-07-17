@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Tag;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class TagsSeeder extends Seeder
 {
@@ -14,6 +15,20 @@ class TagsSeeder extends Seeder
      */
     public function run()
     {
-        Tag::factory()->count(20)->create();
+        $tags = [
+            'Простые',
+            'Сложные',
+            'Средние',
+            'Для девочек',
+            'Для мальчиков',
+        ];
+
+        foreach ($tags as $tag) {
+            Tag::factory()->afterMaking(function ($tagCreated) use ($tag) {
+                $tagCreated->name = $tag;
+                $tagCreated->slug = Str::slug($tag);
+            })->create();
+        }
+
     }
 }

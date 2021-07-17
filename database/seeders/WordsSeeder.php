@@ -35,6 +35,8 @@ class WordsSeeder extends Seeder
 
         $faker = Factory::create();
         $i = 400;
+        $tagsCount = Tag::count();
+
         foreach ($words as $word) {
 
             $wordCreated = new Word();
@@ -42,7 +44,7 @@ class WordsSeeder extends Seeder
             $wordCreated->image = 'https://picsum.photos/id/' . $i . '/640/480';
             $wordCreated->save();
 
-            $tag = Tag::find($faker->numberBetween(1, 20));
+            $tag = Tag::find($faker->numberBetween(1, $tagsCount));
             $wordCreated->tags()->save($tag);
 
 //            $collection = Collection::inRandomOrder()->first();

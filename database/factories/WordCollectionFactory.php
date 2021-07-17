@@ -22,7 +22,7 @@ class WordCollectionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'image' => 'https://picsum.photos/id/' . $this->faker->numberBetween(1, 1000) . '/640/480',
         ];
     }
 }

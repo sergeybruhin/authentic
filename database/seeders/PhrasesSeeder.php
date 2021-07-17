@@ -38,13 +38,14 @@ class PhrasesSeeder extends Seeder
         $faker = Factory::create();
 
         $i = 500;
+        $tagsCount = Tag::count();
         foreach ($phrases as $phrase) {
             $phraseCreated = new Phrase();
             $phraseCreated->text = $phrase;
             $phraseCreated->image = 'https://picsum.photos/id/' . $i.'/640/480';
             $phraseCreated->save();
 
-            $tag = Tag::find($faker->numberBetween(1, 20));
+            $tag = Tag::find($faker->numberBetween(1, $tagsCount));
             $phraseCreated->tags()->save($tag);
             $i++;
         }
