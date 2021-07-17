@@ -26,3 +26,28 @@
         </div>
     </div>
 @endsection
+
+@section('scripts')
+    <script>
+        const word = '{{ Str::upper($word->text) }}';
+        const editor = document.getElementById('editor');
+        document.addEventListener('keyup', logKey);
+
+        function logKey(e) {
+            if(editor.textContent.toLowerCase() === word.toLowerCase()) {
+                if(!editor.classList.contains('editor--success')) {
+                    editor.classList.add('editor--success')
+                }
+            }
+            if(editor.textContent.toLowerCase() !== word.toLowerCase()) {
+                if(editor.classList.contains('editor--success')) {
+                    editor.classList.remove('editor--success')
+                }
+            }
+            console.log(editor.textContent);
+        }
+    </script>
+@endsection
+
+@section('styles')
+@endsection

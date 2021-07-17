@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'deploy' => [
+        'host' => env('DEPLOY_HOST'),
+        'path' => env('DEPLOY_PATH'),
+        'http_user' => env('DEPLOY_HTTP_USER'),
+    ]
 
 ];
