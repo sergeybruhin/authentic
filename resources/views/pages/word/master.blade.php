@@ -11,7 +11,7 @@
                     <h1>⭐️️⭐️️⭐️️</h1>
                 </div>
                 <div class="modal-footer text-center">
-                    <a href="/" type="button" class="btn btn-primary btn-lg" >НА ГЛАВНУЮ</a>
+                    <a href="/" type="button" class="btn btn-primary btn-lg">НА ГЛАВНУЮ</a>
                 </div>
             </div>
         </div>
@@ -31,12 +31,14 @@
         <div class="row">
             <div class="col">
                 @if($previousWord)
-                    <a id="prevButton" class="btn btn-primary btn-lg text-uppercase" style="display: none" href="{{ route('words.show', $previousWord->id) }}">👈 <span class="mx-2"></span> Назад</a>
+                    <a id="prevButton" class="btn btn-primary btn-lg text-uppercase" style="display: none"
+                       href="{{ route('words.show', $previousWord->id) }}">👈 <span class="mx-2"></span> Назад</a>
                 @endif
             </div>
             <div class="col text-end">
                 @if($nextWord)
-                    <a id="nextButton" class="btn btn-primary btn-lg text-uppercase" style="display: none" href="{{ route('words.show', $nextWord->id) }}">Вперёд 👉</a>
+                    <a id="nextButton" class="btn btn-primary btn-lg text-uppercase" style="display: none"
+                       href="{{ route('words.show', $nextWord->id) }}">Вперёд 👉</a>
                 @endif
             </div>
         </div>
@@ -53,19 +55,20 @@
         document.addEventListener('keyup', logKey);
 
         function logKey(e) {
-            if(editor.textContent.toLowerCase() === word.toLowerCase()) {
-                if(!editor.classList.contains('editor--success')) {
+            if (editor.textContent.toLowerCase() === word.toLowerCase()) {
+                if (!editor.classList.contains('editor--success')) {
                     editor.classList.add('editor--success')
                     editor.contentEditable = false;
-                    if(nextButton) {
+                    if (nextButton) {
                         nextButton.style.display = 'inline-block';
                     }
-
-                    successModal.show();
+                    if (!nextButton) {
+                        successModal.show();
+                    }
                 }
             }
-            if(editor.textContent.toLowerCase() !== word.toLowerCase()) {
-                if(editor.classList.contains('editor--success')) {
+            if (editor.textContent.toLowerCase() !== word.toLowerCase()) {
+                if (editor.classList.contains('editor--success')) {
                     editor.classList.remove('editor--success')
                 }
             }
