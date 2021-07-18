@@ -19,29 +19,74 @@ class WordsSeeder extends Seeder
     {
 
         $words = [
-            'яблоко',
-            'груша',
-            'киви',
-            'апельсин',
-            'лимон',
-            'ананас',
-            'банан',
-            'персик',
-            'виноград',
-            'арбуз',
-            'малина',
-            'клубника'
+            [
+              'text'=> 'яблоко',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/1.jpg',
+            ],
+            [
+              'text'=> 'лук',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/2.jpg',
+            ],
+            [
+              'text'=> 'мандарин',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/3.jpg',
+            ],
+            [
+              'text'=> 'чеснок',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/4.jpg',
+            ],
+            [
+              'text'=> 'огурец',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/5.jpg',
+            ],
+            [
+              'text'=> 'банан',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/6.jpg',
+            ],
+            [
+              'text'=> 'помидор',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/7.jpg',
+            ],
+            [
+              'text'=> 'дыня',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/8.jpg',
+            ],
+            [
+              'text'=> 'груша',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/9.jpg',
+            ],
+            [
+              'text'=> 'апельсин',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/10.jpg',
+            ],
+            [
+              'text'=> 'кокос',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/11.jpg',
+            ],
+            [
+              'text'=> 'ананас',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/12.jpg',
+            ],
+            [
+              'text'=> 'слива',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/13.jpg',
+            ],
+            [
+              'text'=> 'виноград',
+              'image' => 'http://authentic.sergeybruhin.com/storage/images/14.jpg',
+            ],
         ];
 
         $faker = Factory::create();
         $i = 400;
         $tagsCount = Tag::count();
 
-        foreach ($words as $word) {
+        foreach ($words as $index => $word) {
 
             $wordCreated = new Word();
-            $wordCreated->text = $word;
-            $wordCreated->image = 'https://picsum.photos/id/' . $i . '/640/480';
+            $wordCreated->text = $word['text'];
+//            $wordCreated->image = 'https://picsum.photos/id/' . $i . '/640/480';
+            $wordCreated->image = $word['image'];
             $wordCreated->save();
 
             $tag = Tag::find($faker->numberBetween(1, $tagsCount));
