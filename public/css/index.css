@@ -16,6 +16,7 @@
   border-radius: 12px;
 }
 .t-wordPreview__title {
+  margin-top: 0.5rem;
   background: #fff;
   color: #4a5568;
   text-decoration: none;
@@ -35,4 +36,34 @@
 }
 .t-wordPreview:hover .t-wordPreview__title, .t-wordPreview:focus .t-wordPreview__title, .t-wordPreview:active .t-wordPreview__title {
   opacity: 1;
+}
+
+.t-wordPreviewStatic {
+  text-decoration: none;
+  max-width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: transparent;
+  display: block;
+  border-radius: 12px;
+  opacity: 0.8;
+  position: relative;
+  transition: all 0.15s ease-out;
+  padding: 1rem;
+}
+.t-wordPreviewStatic__image {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.t-wordPreviewStatic__title {
+  margin-top: 0.5rem;
+  background: #fff;
+  color: #4a5568;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+.t-wordPreviewStatic__title:hover, .t-wordPreviewStatic__title:focus, .t-wordPreviewStatic__title:active {
+  text-decoration: none;
 }

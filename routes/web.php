@@ -42,6 +42,7 @@ Route::prefix('word-collections')
     ->group(function () {
         Route::get('/', [WordCollectionController::class, 'index'])->name('index');
         Route::get('{id}', [WordCollectionController::class, 'show'])->name('show');
+        Route::get('{id}/{wordId}', [WordCollectionController::class, 'showWord'])->name('showWord');
     });
 
 

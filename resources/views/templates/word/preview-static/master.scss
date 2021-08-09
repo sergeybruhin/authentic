@@ -1,4 +1,4 @@
-.t-wordPreview {
+.t-wordPreviewStatic {
     text-decoration: none;
     max-width: 100%;
     border-style: solid;
@@ -26,16 +26,5 @@
             text-decoration: none;
         }
     }
-    &:hover, &:focus, &:active {
-        text-decoration: none;
-        opacity: 1;
-        border-color: orangered;
-        box-shadow: 0 0 50px rgba(#000,15%);
-        z-index: 10;
-        .t-wordPreview {
-            &__title {
-                opacity: 1;
-            }
-        }
-    }
+
 }

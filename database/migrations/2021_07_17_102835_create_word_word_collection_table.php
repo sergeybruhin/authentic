@@ -17,6 +17,7 @@ class CreateWordWordCollectionTable extends Migration
             $table->id();
             $table->foreignId('word_id')->constrained();
             $table->foreignId('word_collection_id')->constrained();
+            $table->integer('order')->default(0);
             $table->timestamps();
         });
     }
@@ -28,7 +29,7 @@ class CreateWordWordCollectionTable extends Migration
      */
     public function down()
     {
-        Schema::table('word_word_collection', function(Blueprint $table) {
+        Schema::table('word_word_collection', function (Blueprint $table) {
             $table->dropForeign('word_id');
             $table->dropForeign('word_collection_id');
         });
