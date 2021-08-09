@@ -24,6 +24,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="{{ mix('css/index.css') }}">
     @yield('styles')
 
 </head>
@@ -33,13 +34,6 @@
 <main>
     @yield('header')
     @yield('content')
-
-    <div class="album py-5 bg-light">
-
-
-
-    </div>
-
 </main>
 
 <footer class="text-muted py-5">

@@ -18,7 +18,7 @@
         </div>
     </div>
 </div>
-<div class="navbar navbar-dark bg-dark shadow-sm">
+<div class="navbar navbar-dark shadow-sm" style="background-color: #a3c2d1">
     <div class="container">
         <a href="/" class="navbar-brand d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
