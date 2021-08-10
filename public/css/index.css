@@ -117,6 +117,12 @@
 .t-wordCollectionPreview__title:hover, .t-wordCollectionPreview__title:focus, .t-wordCollectionPreview__title:active {
   text-decoration: none;
 }
+.t-wordCollectionPreview__wordCount {
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
 .t-wordCollectionPreview:hover, .t-wordCollectionPreview:focus, .t-wordCollectionPreview:active {
   text-decoration: none;
   opacity: 1;

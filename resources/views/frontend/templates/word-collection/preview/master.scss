@@ -54,6 +54,13 @@
         }
     }
 
+    &__wordCount {
+        color: #a0aec0;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: .5rem;
+    }
+
     &:hover, &:focus, &:active {
         text-decoration: none;
         opacity: 1;
