@@ -34,6 +34,8 @@
 <main>
     @yield('header')
     @yield('content')
+
+
 </main>
 
 <footer class="text-muted py-5">

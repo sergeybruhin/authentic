@@ -25,5 +25,12 @@
         </div>
 
     </div>
+    <div class="container">
+        <div class="row align-items-center my-4">
+            <div class="col ">
+                {{ $wordCollections->links() }}
+            </div>
+        </div>
+    </div>
 
 @endsection

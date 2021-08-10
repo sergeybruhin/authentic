@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(TagsSeeder::class);
 //        $this->call(CollectionsSeeder::class);
-        $this->call(WordCollectionSeeder::class);
+//        $this->call(WordCollectionSeeder::class);
         $this->call(WordsSeeder::class);
         $this->call(PhrasesSeeder::class);
 

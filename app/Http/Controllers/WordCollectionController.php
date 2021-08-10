@@ -15,7 +15,7 @@ class WordCollectionController extends Controller
      */
     public function index(): View
     {
-        $wordCollections = WordCollection::all();
+        $wordCollections = WordCollection::with('words')->paginate(30);
         return view('pages.word-collections.master')
             ->with(compact('wordCollections'));
     }
