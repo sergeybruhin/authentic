@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\PhraseController;
-use App\Http\Controllers\WordController;
+use App\Http\Controllers\Frontend\PageController;
+use App\Http\Controllers\Frontend\PhraseController;
+use App\Http\Controllers\Frontend\WordController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WordCollectionController;
-use App\Http\Controllers\TagController;
+use App\Http\Controllers\Frontend\WordCollectionController;
+use App\Http\Controllers\Frontend\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +52,4 @@ Route::prefix('tags')
         Route::get('/', [TagController::class, 'index'])->name('index');
         Route::get('{id}', [TagController::class, 'show'])->name('show');
     });
+
