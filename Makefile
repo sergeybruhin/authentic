@@ -16,6 +16,9 @@ reset:
 cache-clear:
 	sh ./deploy/local/clear.sh; \
 
+deploy:
+	sh ./deploy/local/deploy.sh; \
+
 test:
 	sh ./deploy/local/test.sh; \
 
