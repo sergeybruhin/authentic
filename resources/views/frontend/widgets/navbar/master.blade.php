@@ -18,22 +18,18 @@
         </div>
     </div>
 </div>
-<div class="navbar navbar-dark shadow-sm" style="background-color: #a3c2d1">
+<div class="navbar navbar-dark shadow-sm" style="background-color: #D1D414">
     <div class="container">
         <a href="/" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-                 viewBox="0 0 24 24">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                <circle cx="12" cy="13" r="4"/>
-            </svg>
-            <strong>Authentic</strong>
+            <i class="fas fa-angle-double-up me-3" style="color: #fff700d6"></i>
+            <strong style="text-decoration: none;color: #646100d4">Authentic</strong>
         </a>
-        <a href="{{ route('words.index') }}" class="text-white">Слова</a>
-        <a href="{{ route('phrases.index') }}" class="text-white">Фразы</a>
-        <a href="{{ route('wordCollections.index') }}" class="text-white">Коллекции слов</a>
-        <a href="{{ route('tags.index') }}" class="text-white">Теги</a>
-        <a href="{{ route('admin.home') }}" class="text-white">Админ панель</a>
+{{--        <a href="{{ route('words.index') }}" class="text-white">Слова</a>--}}
+{{--        <a href="{{ route('phrases.index') }}" class="text-white">Фразы</a>--}}
+        <a href="{{ route('wordCollections.index') }}" style="text-decoration: none;color: #646100d4"style="text-decoration: none;color: #000"><i class="fas fa-th-large me-2"></i> Слова</a>
+        <a href="{{ route('wordCollections.index') }}" style="text-decoration: none;color: #646100d4"style="text-decoration: none"><i class="fas fa-th-list me-2"></i> Фразы</a>
+{{--        <a href="{{ route('tags.index') }}" class="text-white">Теги</a>--}}
+        <a href="{{ route('admin.home') }}" class="" style="text-decoration: none;color: #646100d4"><i class="fas fa-cog me-2"></i> Админ панель</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                 aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

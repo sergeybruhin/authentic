@@ -1,29 +1,17 @@
 @extends('frontend.layouts.default.master')
 @section('content')
-    <div class="modal" id="successModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center">ОТЛИЧНО!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h1>⭐️️⭐️️⭐️️</h1>
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="/" type="button" class="btn btn-primary btn-lg">НА ГЛАВНУЮ</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('frontend.widgets.success-modal.master')
     <div class="container pt-5 pb-4" >
         <div class="row " style="display: flex; flex-wrap: wrap;" >
             <div class="col-lg-6">
                 @include('frontend.widgets.editor.master')
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
-                <img class="img-fluid" src="{{ $word->image }}" alt="" style="max-height: 78vh" >
-                <h4 class="text-center my-3">{{ Str::upper($word->text) }}</h4>
+                <div class="" style="max-height: 78vh;height: 100%">
+                    <img class="img-fluid" src="{{ $word->image }}" alt="" style="max-height: 78vh" >
+                    <h4 class="text-center my-3">{{ Str::upper($word->text) }}</h4>
+                </div>
+
             </div>
         </div>
     </div>
@@ -68,7 +56,6 @@
         const prevButton = document.getElementById('prevButton');
         const successModal = new bootstrap.Modal(document.getElementById('successModal'))
         document.addEventListener('keyup', logKey);
-
         function logKey(e) {
             if (editor.textContent.toLowerCase() === word.toLowerCase()) {
                 if (!editor.classList.contains('editor--success')) {

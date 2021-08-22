@@ -76,7 +76,6 @@
   border-color: #a3c2d1;
   display: block;
   border-radius: 12px;
-  opacity: 0.8;
   position: relative;
   transition: all 0.15s ease-out;
   min-height: 100%;
@@ -87,6 +86,7 @@
   align-items: center;
   align-content: stretch;
   justify-content: space-between;
+  background-color: #fff;
 }
 .t-wordCollectionPreview__container {
   display: flex;
@@ -133,4 +133,24 @@
 .t-wordCollectionPreview:hover .t-wordCollectionPreview__title, .t-wordCollectionPreview:focus .t-wordCollectionPreview__title, .t-wordCollectionPreview:active .t-wordCollectionPreview__title {
   opacity: 1;
   color: #000;
+}
+
+.w-successModal__content {
+  padding: 3rem 1rem 3rem 1rem;
+  border-radius: 25px;
+}
+.w-successModal__header {
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+}
+.w-successModal__body {
+  text-align: center;
+  padding: 1rem;
+}
+.w-successModal__footer {
+  text-align: center;
+}
+.w-successModal__footer .btn {
+  border-radius: 30px;
 }
