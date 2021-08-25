@@ -51,5 +51,45 @@
     </div>
 </footer>
 @yield('scripts')
+<script>
+    /* Get the documentElement (<html>) to display the page in fullscreen */
+    const elem = document.documentElement;
+
+    const fullscreenToggle = document.getElementById('fullscreenToggle');
+
+
+    fullscreenToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleFullscreen(e.currentTarget);
+    }, false);
+
+    function toggleFullscreen(toggle) {
+        if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+            if (!toggle.classList.contains('e-fullscreenToggle--expanded')) {
+                toggle.classList.add('e-fullscreenToggle--expanded');
+            }
+
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+            if (toggle.classList.contains('e-fullscreenToggle--expanded')) {
+                toggle.classList.remove('e-fullscreenToggle--expanded');
+            }
+        }
+    }
+</script>
 </body>
 </html>

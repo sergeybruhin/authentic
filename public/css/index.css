@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .t-wordPreview {
   text-decoration: none;
   max-width: 100%;
@@ -153,4 +154,8 @@
 }
 .w-successModal__footer .btn {
   border-radius: 30px;
+}
+
+.e-fullscreenToggle--expanded .fa-expand:before {
+  content: "";
 }

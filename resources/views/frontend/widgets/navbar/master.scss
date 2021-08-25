@@ -1,0 +1,7 @@
+.e-fullscreenToggle {
+    &--expanded {
+        .fa-expand:before {
+            content: "\f066";
+        }
+    }
+}
