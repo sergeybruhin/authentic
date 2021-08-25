@@ -29,6 +29,4 @@
                 <p class="text-center">В коллекции нет слов</p>
             @endforelse
         </div>
-
-
 @endsection
