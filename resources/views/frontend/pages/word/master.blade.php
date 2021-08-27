@@ -49,8 +49,8 @@
             </div>
         @endif
     </div>
-    <audio id="successWordSound" src="/storage/success-word.mp3" preload="auto"></audio>
-    <audio id="successCollectionSound" src="/storage/success-collection.wav" preload="auto"></audio>
+    <audio id="successWordSound" src="/storage/sounds/success-word.mp3" preload="auto"></audio>
+    <audio id="successCollectionSound" src="/storage/sounds/success-collection.wav" preload="auto"></audio>
 
 @endsection
 
