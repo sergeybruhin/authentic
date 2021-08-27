@@ -699,6 +699,342 @@ class WordsSeeder extends Seeder
                     'Одежда', 'Обувь'
                 ],
             ],
+            [
+                'text' => 'енот',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/102.jpg',
+                'collections' => [
+                    'Животные', 'Дикие животные'
+                ],
+            ],
+            [
+                'text' => 'крокодил',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/103.jpg',
+                'collections' => [
+                    'Животные', 'Дикие животные'
+                ],
+            ],
+            [
+                'text' => 'жираф',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/104.jpg',
+                'collections' => [
+                    'Животные', 'Дикие животные'
+                ],
+            ],
+            [
+                'text' => 'фотоаппарат',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/105.jpg',
+                'collections' => [
+                    'Техника',
+                ],
+            ],
+            [
+                'text' => 'клавиатура',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/106.jpg',
+                'collections' => [
+                    'Техника',
+                ],
+            ],
+            [
+                'text' => 'кабан',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/107.jpg',
+                'collections' => [
+                    'Животные', 'Дикие животные'
+                ],
+            ],
+            [
+                'text' => 'богомол',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/108.jpg',
+                'collections' => [
+                    'Насекомые',
+                ],
+            ],
+            [
+                'text' => 'ворона',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/109.jpg',
+                'collections' => [
+                    'Город', 'Птицы'
+                ],
+            ],
+            [
+                'text' => 'лягушка',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/110.jpg',
+                'collections' => [
+                    'Лес', 'Животные'
+                ],
+            ],
+            [
+                'text' => 'бокал',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/111.jpg',
+                'collections' => [
+                    'Посуда', 'Праздник'
+                ],
+            ],
+            [
+                'text' => 'салат',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/112.jpg',
+                'collections' => [
+                    'Еда', 'Праздник'
+                ],
+            ],
+            [
+                'text' => 'орёл',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/113.jpg',
+                'collections' => [
+                    'Птицы',
+                ],
+            ],
+            [
+                'text' => 'сова',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/114.jpg',
+                'collections' => [
+                    'Птицы', 'Лес'
+                ],
+            ],
+            [
+                'text' => 'одеяло',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/115.jpg',
+                'collections' => [
+                    'Комната', 'Постель'
+                ],
+            ],
+            [
+                'text' => 'пеликан',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/116.jpg',
+                'collections' => [
+                    'Птицы',
+                ],
+            ],
+            [
+                'text' => 'муравей',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/117.jpg',
+                'collections' => [
+                    'Насекомые', 'Лес'
+                ],
+            ],
+            [
+                'text' => 'тарелка',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/118.jpg',
+                'collections' => [
+                    'Посуда',
+                ],
+            ],
+            [
+                'text' => 'бабочка',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/119.jpg',
+                'collections' => [
+                    'Насекомые',
+                ],
+            ],
+            [
+                'text' => 'стрекоза',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/121.jpg',
+                'collections' => [
+                    'Насекомые',
+                ],
+            ],
+            [
+                'text' => 'обезьяна',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/122.jpg',
+                'collections' => [
+                    'Животные', 'Дикие животные'
+                ],
+            ],
+            [
+                'text' => 'картофель фри',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/123.jpg',
+                'collections' => [
+                    'Еда', 'Город', 'Фастфуд'
+                ],
+            ],
+            [
+                'text' => 'гамбургер',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/124.jpg',
+                'collections' => [
+                    'Еда', 'Город', 'Фастфуд'
+                ],
+            ],
+            [
+                'text' => 'змея',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/125.jpg',
+                'collections' => [
+                    'Пресмыкающиеся', 'Лес'
+                ],
+            ],
+            [
+                'text' => 'трусы',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/126.jpg',
+                'collections' => [
+                    'Одежда',
+                ],
+            ],
+            [
+                'text' => 'ящерица',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/127.jpg',
+                'collections' => [
+                    'Пресмыкающиеся',
+                ],
+            ],
+            [
+                'text' => 'пюре',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/128.jpg',
+                'collections' => [
+                    'Еда',
+                ],
+            ],
+            [
+                'text' => 'бусы',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/129.jpg',
+                'collections' => [
+                    'Аксессуары',
+                ],
+            ],
+            [
+                'text' => 'чайка',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/130.jpg',
+                'collections' => [
+                    'Птицы', 'Город'
+                ],
+            ],
+            [
+                'text' => 'фламинго',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/131.jpg',
+                'collections' => [
+                    'Птицы',
+                ],
+            ],
+            [
+                'text' => 'свинья',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/132.jpg',
+                'collections' => [
+                    'Животные', 'Домашние животные'
+                ],
+            ],
+            [
+                'text' => 'паук',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/133.jpg',
+                'collections' => [
+                    'Насекомые', 'Лес'
+                ],
+            ],
+            [
+                'text' => 'чай',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/134.jpg',
+                'collections' => [
+                    'Напитки',
+                ],
+            ],
+            [
+                'text' => 'воробей',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/135.jpg',
+                'collections' => [
+                    'Птицы', 'Город'
+                ],
+            ],
+            [
+                'text' => '',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/135.jpg',
+                'collections' => [
+                    'Птицы', 'Город'
+                ],
+            ],
+            [
+                'text' => 'божья коровка',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/137.jpg',
+                'collections' => [
+                    'Насекомые', 'Лес'
+                ],
+            ],
+            [
+                'text' => 'кузнечик',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/138.jpg',
+                'collections' => [
+                    'Насекомые',
+                ],
+            ],
+            [
+                'text' => 'мухы',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/139.jpg',
+                'collections' => [
+                    'Насекомые',
+                ],
+            ],
+            [
+                'text' => 'нагетсы',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/140.jpg',
+                'collections' => [
+                    'Еда', "Фастфуд"
+                ],
+            ],
+            [
+                'text' => 'пингвин',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/141.jpg',
+                'collections' => [
+                    'Птицы', "Северный полюс"
+                ],
+            ],
+            [
+                'text' => 'акула',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/142.jpg',
+                'collections' => [
+                    'Рыбы', "Океан"
+                ],
+            ],
+            [
+                'text' => 'дельфин',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/143.jpg',
+                'collections' => [
+                    'Рыбы', "Океан"
+                ],
+            ],
+            [
+                'text' => 'кит',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/144.jpg',
+                'collections' => [
+                    'Рыбы', "Океан"
+                ],
+            ],
+            [
+                'text' => 'медведь',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/145.jpg',
+                'collections' => [
+                    'Животные', "Дикие животные", 'Лес'
+                ],
+            ],
+            [
+                'text' => 'рысь',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/146.jpg',
+                'collections' => [
+                    'Животные', "Дикие животные", 'Лес'
+                ],
+            ],
+            [
+                'text' => 'лось',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/147.jpg',
+                'collections' => [
+                    'Животные', "Дикие животные", 'Лес'
+                ],
+            ],
+            [
+                'text' => 'лиса',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/148.jpg',
+                'collections' => [
+                    'Животные', "Дикие животные", 'Лес'
+                ],
+            ],
+            [
+                'text' => 'рак',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/149.jpg',
+                'collections' => [
+                    'Река', "Океан"
+                ],
+            ],
+            [
+                'text' => 'осьминог',
+                'image' => 'http://authentic.sergeybruhin.com/storage/images/150.jpg',
+                'collections' => [
+                    "Океан",
+                ],
+            ],
         ];
 
         $faker = Factory::create();
