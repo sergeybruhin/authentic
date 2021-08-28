@@ -17,6 +17,7 @@ class CreateWordsTable extends Migration
             $table->id();
             $table->string('text');
             $table->string('image');
+            $table->string('audio')->nullable();
             $table->timestamps();
         });
     }

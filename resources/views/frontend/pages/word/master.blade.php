@@ -51,19 +51,30 @@
     </div>
     <audio id="successWordSound" src="/storage/sounds/success-word.mp3" preload="auto"></audio>
     <audio id="successCollectionSound" src="/storage/sounds/success-collection.wav" preload="auto"></audio>
-
+    @if($word->audio)
+        <audio id="wordVoiceover" src="{{ $word->audio }}" preload="auto"></audio>
+    @endif
 @endsection
 
 @section('scripts')
     <script>
         successWordSound = document.getElementById('successWordSound');
         successCollectionSound = document.getElementById('successCollectionSound');
+        wordVoiceover = document.getElementById('wordVoiceover');
 
         const playSuccessWord = function () {
             successWordSound.play();
         };
         const playSuccessCollection = function () {
             successCollectionSound.play();
+        }
+        const playWordVoiceover = function () {
+            if (wordVoiceover) {
+                setTimeout(function() {
+                    wordVoiceover.play();
+                },100)
+
+            }
         }
 
         const word = '{{ Str::upper($word->text) }}';
@@ -81,10 +92,12 @@
                     if (nextButton) {
                         nextButton.style.display = 'inline-block';
                         playSuccessWord();
+                        playWordVoiceover();
                     }
                     if (!nextButton) {
                         successModal.show();
                         playSuccessCollection();
+
                     }
 
                 }

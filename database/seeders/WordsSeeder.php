@@ -22,1015 +22,1160 @@ class WordsSeeder extends Seeder
         $words = [
             [
                 'text' => 'яблоко',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/1.jpg',
+                'image' => '/storage/images/1.jpg',
+                'audio' => '/storage/audio/1.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'лук',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/2.jpg',
+                'image' => '/storage/images/2.jpg',
+                'audio' => '/storage/audio/2.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'мандарин',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/3.jpg',
+                'image' => '/storage/images/3.jpg',
+                'audio' => '/storage/audio/3.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'чеснок',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/4.jpg',
+                'image' => '/storage/images/4.jpg',
+                'audio' => '/storage/audio/4.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'огурец',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/5.jpg',
+                'image' => '/storage/images/5.jpg',
+                'audio' => '/storage/audio/5.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'банан',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/6.jpg',
+                'image' => '/storage/images/6.jpg',
+                'audio' => '/storage/audio/6.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'помидор',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/7.jpg',
+                'image' => '/storage/images/7.jpg',
+                'audio' => '/storage/audio/7.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'дыня',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/8.jpg',
+                'image' => '/storage/images/8.jpg',
+                'audio' => '/storage/audio/8.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'груша',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/9.jpg',
+                'image' => '/storage/images/9.jpg',
+                'audio' => '/storage/audio/9.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'апельсин',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/10.jpg',
+                'image' => '/storage/images/10.jpg',
+                'audio' => '/storage/audio/10.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'кокос',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/11.jpg',
+                'image' => '/storage/images/11.jpg',
+                'audio' => '/storage/audio/11.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'ананас',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/12.jpg',
+                'image' => '/storage/images/12.jpg',
+                'audio' => '/storage/audio/12.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'слива',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/13.jpg',
+                'image' => '/storage/images/13.jpg',
+                'audio' => '/storage/audio/13.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'виноград',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/14.jpg',
+                'image' => '/storage/images/14.jpg',
+                'audio' => '/storage/audio/14.m4a',
                 'collections' => [
                     'Фрукты'
                 ],
             ],
             [
                 'text' => 'кастрюля',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/15.jpg',
+                'image' => '/storage/images/15.jpg',
+                'audio' => '/storage/audio/15.m4a',
                 'collections' => [
                     'Посуда', 'Кухня'
                 ],
             ],
             [
                 'text' => 'окно',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/16.jpg',
+                'image' => '/storage/images/16.jpg',
+                'audio' => '/storage/audio/16.m4a',
                 'collections' => [
                     'Дом', 'Комната'
                 ],
             ],
             [
                 'text' => 'наушники',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/17.jpg',
+                'image' => '/storage/images/17.jpg',
+                'audio' => '/storage/audio/17.m4a',
                 'collections' => [
                     'Техника', 'Комьютер'
                 ],
             ],
             [
                 'text' => 'чашка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/18.jpg',
+                'image' => '/storage/images/18.jpg',
+                'audio' => '/storage/audio/18.m4a',
                 'collections' => [
                     'Посуда', 'Кухня'
                 ],
             ],
             [
                 'text' => 'шоколад',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/19.jpg',
+                'image' => '/storage/images/19.jpg',
+                'audio' => '/storage/audio/19.m4a',
                 'collections' => [
                     'Сладости', 'Еда'
                 ],
             ],
             [
                 'text' => 'стол',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/20.jpg',
+                'image' => '/storage/images/20.jpg',
+                'audio' => '/storage/audio/20.m4a',
                 'collections' => [
                     'Кухня', 'Комната', 'Мебель'
                 ],
             ],
             [
                 'text' => 'телефон',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/21.jpg',
+                'image' => '/storage/images/21.jpg',
+                'audio' => '/storage/audio/21.m4a',
                 'collections' => [
                     'Техника'
                 ],
             ],
             [
                 'text' => 'молоко',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/22.jpg',
+                'image' => '/storage/images/22.jpg',
+                'audio' => '/storage/audio/22.m4a',
                 'collections' => [
                     'Продукты', 'Еда'
                 ],
             ],
             [
                 'text' => 'часы',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/23.jpg',
+                'image' => '/storage/images/23.jpg',
+                'audio' => '/storage/audio/23.m4a',
                 'collections' => [
                     'Комната', 'Дом'
                 ],
             ],
             [
                 'text' => 'стул',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/24.jpg',
+                'image' => '/storage/images/24.jpg',
+                'audio' => '/storage/audio/24.m4a',
                 'collections' => [
                     'Комната', 'Кухня', 'Мебель'
                 ],
             ],
             [
                 'text' => 'рюкзак',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/25.jpg',
+                'image' => '/storage/images/25.jpg',
+                'audio' => '/storage/audio/25.m4a',
                 'collections' => [
                     'Аксессуары', 'Одежда'
                 ],
             ],
             [
                 'text' => 'ноутбук',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/26.jpg',
+                'image' => '/storage/images/26.jpg',
+                'audio' => '/storage/audio/26.m4a',
                 'collections' => [
                     'Техника', 'Комьютер'
                 ],
             ],
             [
                 'text' => 'чайник',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/27.jpg',
+                'image' => '/storage/images/27.jpg',
+                'audio' => '/storage/audio/27.m4a',
                 'collections' => [
                     'Техника', 'Кухня'
                 ],
             ],
             [
                 'text' => 'морковь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/28.jpg',
+                'image' => '/storage/images/28.jpg',
+                'audio' => '/storage/audio/28.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'стакан',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/29.jpg',
+                'image' => '/storage/images/29.jpg',
+                'audio' => '/storage/audio/29.m4a',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
             ],
             [
                 'text' => 'мороженое',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/30.jpg',
+                'image' => '/storage/images/30.jpg',
+                'audio' => '/storage/audio/30.m4a',
                 'collections' => [
                     'Еда', 'Сладости'
                 ],
             ],
             [
                 'text' => 'эскимо',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/31.jpg',
+                'image' => '/storage/images/31.jpg',
+                'audio' => '/storage/audio/31.m4a',
                 'collections' => [
                     'Еда', 'Сладости'
                 ],
             ],
             [
                 'text' => 'кровать',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/32.jpg',
+                'image' => '/storage/images/32.jpg',
+                'audio' => '/storage/audio/32.m4a',
                 'collections' => [
                     'Мебель', 'Комната'
                 ],
             ],
             [
                 'text' => 'вилка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/33.jpg',
+                'image' => '/storage/images/33.jpg',
+                'audio' => '/storage/audio/33.m4a',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
             ],
             [
                 'text' => 'ложка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/34.jpg',
+                'image' => '/storage/images/34.jpg',
+                'audio' => '/storage/audio/34.m4a',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
             ],
             [
                 'text' => 'пианино',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/35.jpg',
+                'image' => '/storage/images/35.jpg',
+                'audio' => '/storage/audio/35.m4a',
                 'collections' => [
                     'Музыка'
                 ],
             ],
             [
                 'text' => 'книга',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/36.jpg',
+                'image' => '/storage/images/36.jpg',
+                'audio' => '/storage/audio/36.m4a',
                 'collections' => [
                     'Аксессуары'
                 ],
             ],
             [
                 'text' => 'капуста',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/37.jpg',
+                'image' => '/storage/images/37.jpg',
+                'audio' => '/storage/audio/37.m4a',
                 'collections' => [
                     'Овощи'
                 ],
             ],
             [
                 'text' => 'сковорода',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/38.jpg',
+                'image' => '/storage/images/38.jpg',
+                'audio' => '/storage/audio/38.m4a',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
             ],
             [
                 'text' => 'шкаф',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/39.jpg',
+                'image' => '/storage/images/39.jpg',
+                'audio' => '/storage/audio/39.m4a',
                 'collections' => [
                     'Комната', 'Мебель'
                 ],
             ],
             [
                 'text' => 'колбаса',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/40.jpg',
+                'image' => '/storage/images/40.jpg',
+                'audio' => '/storage/audio/40.m4a',
                 'collections' => [
                     'Еда'
                 ],
             ],
             [
                 'text' => 'слон',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/41.jpg',
+                'image' => '/storage/images/41.jpg',
+                'audio' => '/storage/audio/41.m4a',
                 'collections' => [
                     'Животные'
                 ],
             ],
             [
                 'text' => 'кепка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/42.jpg',
+                'image' => '/storage/images/42.jpg',
+                'audio' => '/storage/audio/42.m4a',
                 'collections' => [
                     'Одежда'
                 ],
             ],
             [
                 'text' => 'кресло',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/43.jpg',
+                'image' => '/storage/images/43.jpg',
+                'audio' => '/storage/audio/43.m4a',
                 'collections' => [
                     'Мебель'
                 ],
             ],
             [
                 'text' => 'мотоцикл',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/44.jpg',
+                'image' => '/storage/images/44.jpg',
+                'audio' => '/storage/audio/44.m4a',
                 'collections' => [
                     'Транспорт'
                 ],
             ],
             [
                 'text' => 'скейтборд',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/45.jpg',
+                'image' => '/storage/images/45.jpg',
+                'audio' => '/storage/audio/45.m4a',
                 'collections' => [
                     'Спорт'
                 ],
             ],
             [
                 'text' => 'печенье',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/46.jpg',
+                'image' => '/storage/images/46.jpg',
+                'audio' => '/storage/audio/46.m4a',
                 'collections' => [
                     'Еда', 'Сладкое'
                 ],
             ],
             [
                 'text' => 'самокат',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/47.jpg',
+                'image' => '/storage/images/47.jpg',
+                'audio' => '/storage/audio/47.m4a',
                 'collections' => [
                     'Транспорт', 'Спорт'
                 ],
             ],
             [
                 'text' => 'черника',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/48.jpg',
+                'image' => '/storage/images/48.jpg',
+                'audio' => '/storage/audio/1.m4a',
                 'collections' => [
                     'Ягоды'
                 ],
             ],
             [
                 'text' => 'автобус',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/49.jpg',
+                'image' => '/storage/images/49.jpg',
+                'audio' => '/storage/audio/49.m4a',
                 'collections' => [
                     'Транспорт', 'Город'
                 ],
             ],
             [
                 'text' => 'собака',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/50.jpg',
+                'image' => '/storage/images/50.jpg',
+                'audio' => '/storage/audio/50.m4a',
                 'collections' => [
                     'Животные', 'Домашние животные', 'Дерерня'
                 ],
             ],
             [
                 'text' => 'баран',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/51.jpg',
+                'image' => '/storage/images/51.jpg',
+                'audio' => '/storage/audio/51.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'облако',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/52.jpg',
+                'image' => '/storage/images/52.jpg',
+                'audio' => '/storage/audio/52.m4a',
                 'collections' => [
                     'Природа',
                 ],
             ],
             [
                 'text' => 'троллейбус',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/53.jpg',
+                'image' => '/storage/images/53.jpg',
+                'audio' => '/storage/audio/53.m4a',
                 'collections' => [
                     'Город', 'Транспорт'
                 ],
             ],
             [
                 'text' => 'конфета',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/54.jpg',
+                'image' => '/storage/images/54.jpg',
+                'audio' => '/storage/audio/54.m4a',
                 'collections' => [
                     'Еда', 'Сладкое'
                 ],
             ],
             [
                 'text' => 'овца',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/55.jpg',
+                'image' => '/storage/images/55.jpg',
+                'audio' => '/storage/audio/55.m4a',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'заяц',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/56.jpg',
+                'image' => '/storage/images/56.jpg',
+                'audio' => '/storage/audio/56.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'куртка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/57.jpg',
+                'image' => '/storage/images/57.jpg',
+                'audio' => '/storage/audio/57.m4a',
                 'collections' => [
                     'Одежда',
                 ],
             ],
             [
                 'text' => 'санки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/58.jpg',
+                'image' => '/storage/images/58.jpg',
+                'audio' => '/storage/audio/58.m4a',
                 'collections' => [
                     'Спорт',
                 ],
             ],
             [
                 'text' => 'велосипед',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/59.jpg',
+                'image' => '/storage/images/59.jpg',
+                'audio' => '/storage/audio/59.m4a',
                 'collections' => [
                     'Спорт', 'Транспорт'
                 ],
             ],
             [
                 'text' => 'колонки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/61.jpg',
+                'image' => '/storage/images/61.jpg',
+                'audio' => '/storage/audio/60.m4a',
                 'collections' => [
                     'Комната', 'Техника'
                 ],
             ],
             [
                 'text' => 'сок',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/62.jpg',
+                'image' => '/storage/images/62.jpg',
+                'audio' => '/storage/audio/62.m4a',
                 'collections' => [
                     'Еда', 'Напитки'
                 ],
             ],
             [
                 'text' => 'шапка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/63.jpg',
+                'image' => '/storage/images/63.jpg',
+                'audio' => '/storage/audio/63.m4a',
                 'collections' => [
                     'Одежда', 'Головные уборы', 'Зима'
                 ],
             ],
             [
                 'text' => 'клюква',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/64.jpg',
+                'image' => '/storage/images/64.jpg',
+                'audio' => '/storage/audio/64.m4a',
                 'collections' => [
                     'Ягоды'
                 ],
             ],
             [
                 'text' => 'брусника',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/65.jpg',
+                'image' => '/storage/images/65.jpg',
+                'audio' => '/storage/audio/65.m4a',
                 'collections' => [
                     'Ягоды'
                 ],
             ],
             [
                 'text' => 'куст',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/66.jpg',
+                'image' => '/storage/images/66.jpg',
+                'audio' => '/storage/audio/66.m4a',
                 'collections' => [
                     'Город', 'Растения'
                 ],
             ],
             [
                 'text' => 'штаны',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/67.jpg',
+                'image' => '/storage/images/67.jpg',
+                'audio' => '/storage/audio/67.m4a',
                 'collections' => [
                     'Одежда',
                 ],
             ],
             [
                 'text' => 'циплёнок',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/68.jpg',
+                'image' => '/storage/images/68.jpg',
+                'audio' => '/storage/audio/68.m4a',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'ролики',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/69.jpg',
+                'image' => '/storage/images/69.jpg',
+                'audio' => '/storage/audio/69.m4a',
                 'collections' => [
                     'Спорт',
                 ],
             ],
             [
                 'text' => 'солнце',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/70.jpg',
+                'image' => '/storage/images/70.jpg',
+                'audio' => '/storage/audio/70.m4a',
                 'collections' => [
                     'Природа',
                 ],
             ],
             [
                 'text' => 'лошадь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/71.jpg',
+                'image' => '/storage/images/71.jpg',
+                'audio' => '/storage/audio/71.m4a',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'футболка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/72.jpg',
+                'image' => '/storage/images/72.jpg',
+                'audio' => '/storage/audio/72.m4a',
                 'collections' => [
                     'Одежда',
                 ],
             ],
             [
                 'text' => 'кошка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/73.jpg',
+                'image' => '/storage/images/73.jpg',
+                'audio' => '/storage/audio/73.m4a',
                 'collections' => [
                     'Животные', 'Домашние животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'курица',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/74.jpg',
+                'image' => '/storage/images/74.jpg',
+                'audio' => '/storage/audio/74.m4a',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'коктейль',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/75.jpg',
+                'image' => '/storage/images/75.jpg',
+                'audio' => '/storage/audio/75.m4a',
                 'collections' => [
                     'Сладкое', 'Напитки', 'Кафе'
                 ],
             ],
             [
                 'text' => 'сноуборд',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/76.jpg',
+                'image' => '/storage/images/76.jpg',
+                'audio' => '/storage/audio/76.m4a',
                 'collections' => [
                     'Спорт', 'Зима'
                 ],
             ],
             [
                 'text' => 'тигр',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/77.jpg',
+                'image' => '/storage/images/77.jpg',
+                'audio' => '/storage/audio/77.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'корова',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/78.jpg',
+                'image' => '/storage/images/78.jpg',
+                'audio' => '/storage/audio/78.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'луна',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/79.jpg',
+                'image' => '/storage/images/79.jpg',
+                'audio' => '/storage/audio/79.m4a',
                 'collections' => [
                     'Природа',
                 ],
             ],
             [
                 'text' => 'коньки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/81.jpg',
+                'image' => '/storage/images/81.jpg',
+                'audio' => '/storage/audio/81.m4a',
                 'collections' => [
                     'Спорт', 'Зима'
                 ],
             ],
             [
                 'text' => 'носки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/82.jpg',
+                'image' => '/storage/images/82.jpg',
+                'audio' => '/storage/audio/82.m4a',
                 'collections' => [
                     'Одежда',
                 ],
             ],
             [
                 'text' => 'поезд',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/83.jpg',
+                'image' => '/storage/images/83.jpg',
+                'audio' => '/storage/audio/83.m4a',
                 'collections' => [
                     'Транспорт', 'Город'
                 ],
             ],
             [
                 'text' => 'дверь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/84.jpg',
+                'image' => '/storage/images/84.jpg',
+                'audio' => '/storage/audio/84.m4a',
                 'collections' => [
                     'Комната',
                 ],
             ],
             [
                 'text' => 'козёл',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/85.jpg',
+                'image' => '/storage/images/85.jpg',
+                'audio' => '/storage/audio/85.m4a',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
             ],
             [
                 'text' => 'жираф',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/86.jpg',
+                'image' => '/storage/images/86.jpg',
+                'audio' => '/storage/audio/86.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'телевизор',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/87.jpg',
+                'image' => '/storage/images/87.jpg',
+                'audio' => '/storage/audio/87.m4a',
                 'collections' => [
                     'Техника',
                 ],
             ],
             [
                 'text' => 'слива',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/88.jpg',
+                'image' => '/storage/images/88.jpg',
+                'audio' => '/storage/audio/88.m4a',
                 'collections' => [
                     'Фрукты',
                 ],
             ],
             [
                 'text' => 'клубника',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/89.jpg',
+                'image' => '/storage/images/89.jpg',
+                'audio' => '/storage/audio/89.m4a',
                 'collections' => [
                     'Ягоды',
                 ],
             ],
             [
                 'text' => 'морошка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/90.jpg',
+                'image' => '/storage/images/90.jpg',
+                'audio' => '/storage/audio/90.m4a',
                 'collections' => [
                     'Ягоды',
                 ],
             ],
             [
                 'text' => 'трактор',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/91.jpg',
+                'image' => '/storage/images/91.jpg',
+                'audio' => '/storage/audio/91.m4a',
                 'collections' => [
                     'Транспорт', 'Деревня'
                 ],
             ],
             [
                 'text' => 'дерево',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/92.jpg',
+                'image' => '/storage/images/92.jpg',
+                'audio' => '/storage/audio/92.m4a',
                 'collections' => [
                     'Растения', 'Город'
                 ],
             ],
             [
                 'text' => 'голубь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/93.jpg',
+                'image' => '/storage/images/93.jpg',
+                'audio' => '/storage/audio/93.m4a',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
             ],
             [
                 'text' => 'лев',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/94.jpg',
+                'image' => '/storage/images/94.jpg',
+                'audio' => '/storage/audio/94.m4a',
                 'collections' => [
                     'Животные',
                 ],
             ],
             [
                 'text' => 'лыжи',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/96.jpg',
+                'image' => '/storage/images/96.jpg',
+                'audio' => '/storage/audio/96.m4a',
                 'collections' => [
                     'Спорт',
                 ],
             ],
             [
                 'text' => 'тыква',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/97.jpg',
+                'image' => '/storage/images/97.jpg',
+                'audio' => '/storage/audio/97.m4a',
                 'collections' => [
                     'Овощи',
                 ],
             ],
             [
                 'text' => 'очки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/99.jpg',
+                'image' => '/storage/images/99.jpg',
+                'audio' => '/storage/audio/99.m4a',
                 'collections' => [
                     'Аксессуары',
                 ],
             ],
             [
                 'text' => 'ботинки',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/100.jpg',
+                'image' => '/storage/images/100.jpg',
+                'audio' => '/storage/audio/100.m4a',
                 'collections' => [
                     'Одежда', 'Обувь'
                 ],
             ],
             [
                 'text' => 'сапоги',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/101.jpg',
+                'image' => '/storage/images/101.jpg',
+                'audio' => '/storage/audio/101.m4a',
                 'collections' => [
                     'Одежда', 'Обувь'
                 ],
             ],
             [
                 'text' => 'енот',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/102.jpg',
+                'image' => '/storage/images/102.jpg',
+                'audio' => '/storage/audio/102.m4a',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
             ],
             [
                 'text' => 'крокодил',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/103.jpg',
+                'image' => '/storage/images/103.jpg',
+                'audio' => '/storage/audio/103.m4a',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
             ],
             [
                 'text' => 'жираф',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/104.jpg',
+                'image' => '/storage/images/104.jpg',
+                'audio' => '/storage/audio/104.m4a',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
             ],
             [
                 'text' => 'фотоаппарат',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/105.jpg',
+                'image' => '/storage/images/105.jpg',
+                'audio' => '/storage/audio/105.m4a',
                 'collections' => [
                     'Техника',
                 ],
             ],
             [
                 'text' => 'клавиатура',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/106.jpg',
+                'image' => '/storage/images/106.jpg',
+                'audio' => '/storage/audio/106.m4a',
                 'collections' => [
                     'Техника',
                 ],
             ],
             [
                 'text' => 'кабан',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/107.jpg',
+                'image' => '/storage/images/107.jpg',
+                'audio' => '/storage/audio/107.m4a',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
             ],
             [
                 'text' => 'богомол',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/108.jpg',
+                'image' => '/storage/images/108.jpg',
+                'audio' => '/storage/audio/108.m4a',
                 'collections' => [
                     'Насекомые',
                 ],
             ],
             [
                 'text' => 'ворона',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/109.jpg',
+                'image' => '/storage/images/109.jpg',
+                'audio' => '/storage/audio/109.m4a',
                 'collections' => [
                     'Город', 'Птицы'
                 ],
             ],
             [
                 'text' => 'лягушка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/110.jpg',
+                'image' => '/storage/images/110.jpg',
+                'audio' => '/storage/audio/110.m4a',
                 'collections' => [
                     'Лес', 'Животные'
                 ],
             ],
             [
                 'text' => 'бокал',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/111.jpg',
+                'image' => '/storage/images/111.jpg',
+                'audio' => '/storage/audio/111.m4a',
                 'collections' => [
                     'Посуда', 'Праздник'
                 ],
             ],
             [
                 'text' => 'салат',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/112.jpg',
+                'image' => '/storage/images/112.jpg',
+                'audio' => '/storage/audio/112.m4a',
                 'collections' => [
                     'Еда', 'Праздник'
                 ],
             ],
             [
                 'text' => 'орёл',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/113.jpg',
+                'image' => '/storage/images/113.jpg',
+                'audio' => '/storage/audio/113.m4a',
                 'collections' => [
                     'Птицы',
                 ],
             ],
             [
                 'text' => 'сова',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/114.jpg',
+                'image' => '/storage/images/114.jpg',
+                'audio' => '/storage/audio/114.m4a',
                 'collections' => [
                     'Птицы', 'Лес'
                 ],
             ],
             [
                 'text' => 'одеяло',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/115.jpg',
+                'image' => '/storage/images/115.jpg',
+                'audio' => '/storage/audio/115.m4a',
                 'collections' => [
                     'Комната', 'Постель'
                 ],
             ],
             [
                 'text' => 'пеликан',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/116.jpg',
+                'image' => '/storage/images/116.jpg',
+                'audio' => '/storage/audio/116.m4a',
                 'collections' => [
                     'Птицы',
                 ],
             ],
             [
                 'text' => 'муравей',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/117.jpg',
+                'image' => '/storage/images/117.jpg',
+                'audio' => '/storage/audio/117.m4a',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
             ],
             [
                 'text' => 'тарелка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/118.jpg',
+                'image' => '/storage/images/118.jpg',
+                'audio' => '/storage/audio/118.m4a',
                 'collections' => [
                     'Посуда',
                 ],
             ],
             [
                 'text' => 'бабочка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/119.jpg',
+                'image' => '/storage/images/119.jpg',
+                'audio' => '/storage/audio/119.m4a',
                 'collections' => [
                     'Насекомые',
                 ],
             ],
             [
                 'text' => 'стрекоза',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/121.jpg',
+                'image' => '/storage/images/121.jpg',
+                'audio' => '/storage/audio/121.m4a',
                 'collections' => [
                     'Насекомые',
                 ],
             ],
             [
                 'text' => 'обезьяна',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/122.jpg',
+                'image' => '/storage/images/122.jpg',
+                'audio' => '/storage/audio/122.m4a',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
             ],
             [
                 'text' => 'картофель фри',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/123.jpg',
+                'image' => '/storage/images/123.jpg',
+                'audio' => '/storage/audio/123.m4a',
                 'collections' => [
                     'Еда', 'Город', 'Фастфуд'
                 ],
             ],
             [
                 'text' => 'гамбургер',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/124.jpg',
+                'image' => '/storage/images/124.jpg',
+                'audio' => '/storage/audio/124.m4a',
                 'collections' => [
                     'Еда', 'Город', 'Фастфуд'
                 ],
             ],
             [
                 'text' => 'змея',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/125.jpg',
+                'image' => '/storage/images/125.jpg',
+                'audio' => '/storage/audio/125.m4a',
                 'collections' => [
                     'Пресмыкающиеся', 'Лес'
                 ],
             ],
             [
                 'text' => 'трусы',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/126.jpg',
+                'image' => '/storage/images/126.jpg',
+                'audio' => '/storage/audio/126.m4a',
                 'collections' => [
                     'Одежда',
                 ],
             ],
             [
                 'text' => 'ящерица',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/127.jpg',
+                'image' => '/storage/images/127.jpg',
+                'audio' => '/storage/audio/127.m4a',
                 'collections' => [
                     'Пресмыкающиеся',
                 ],
             ],
             [
                 'text' => 'пюре',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/128.jpg',
+                'image' => '/storage/images/128.jpg',
+                'audio' => '/storage/audio/128.m4a',
                 'collections' => [
                     'Еда',
                 ],
             ],
             [
                 'text' => 'бусы',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/129.jpg',
+                'image' => '/storage/images/129.jpg',
+                'audio' => '/storage/audio/129.m4a',
                 'collections' => [
                     'Аксессуары',
                 ],
             ],
             [
                 'text' => 'чайка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/130.jpg',
+                'image' => '/storage/images/130.jpg',
+                'audio' => '/storage/audio/130.m4a',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
             ],
             [
                 'text' => 'фламинго',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/131.jpg',
+                'image' => '/storage/images/131.jpg',
+                'audio' => '/storage/audio/131.m4a',
                 'collections' => [
                     'Птицы',
                 ],
             ],
             [
                 'text' => 'свинья',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/132.jpg',
+                'image' => '/storage/images/132.jpg',
+                'audio' => '/storage/audio/132.m4a',
                 'collections' => [
                     'Животные', 'Домашние животные'
                 ],
             ],
             [
                 'text' => 'паук',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/133.jpg',
+                'image' => '/storage/images/133.jpg',
+                'audio' => '/storage/audio/133.m4a',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
             ],
             [
                 'text' => 'чай',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/134.jpg',
+                'image' => '/storage/images/134.jpg',
+                'audio' => '/storage/audio/134.m4a',
                 'collections' => [
                     'Напитки',
                 ],
             ],
             [
                 'text' => 'воробей',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/135.jpg',
+                'image' => '/storage/images/135.jpg',
+                'audio' => '/storage/audio/135.m4a',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
             ],
             [
                 'text' => '',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/135.jpg',
+                'image' => '/storage/images/135.jpg',
+                'audio' => '/storage/audio/136.m4a',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
             ],
             [
                 'text' => 'божья коровка',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/137.jpg',
+                'image' => '/storage/images/137.jpg',
+                'audio' => '/storage/audio/137.m4a',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
             ],
             [
                 'text' => 'кузнечик',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/138.jpg',
+                'image' => '/storage/images/138.jpg',
+                'audio' => '/storage/audio/138.m4a',
                 'collections' => [
                     'Насекомые',
                 ],
             ],
             [
                 'text' => 'мухы',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/139.jpg',
+                'image' => '/storage/images/139.jpg',
+                'audio' => '/storage/audio/139.m4a',
                 'collections' => [
                     'Насекомые',
                 ],
             ],
             [
                 'text' => 'нагетсы',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/140.jpg',
+                'image' => '/storage/images/140.jpg',
+                'audio' => '/storage/audio/140.m4a',
                 'collections' => [
                     'Еда', "Фастфуд"
                 ],
             ],
             [
                 'text' => 'пингвин',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/141.jpg',
+                'image' => '/storage/images/141.jpg',
+                'audio' => '/storage/audio/141.m4a',
                 'collections' => [
                     'Птицы', "Северный полюс"
                 ],
             ],
             [
                 'text' => 'акула',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/142.jpg',
+                'image' => '/storage/images/142.jpg',
+                'audio' => '/storage/audio/142.m4a',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
             ],
             [
                 'text' => 'дельфин',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/143.jpg',
+                'image' => '/storage/images/143.jpg',
+                'audio' => '/storage/audio/143.m4a',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
             ],
             [
                 'text' => 'кит',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/144.jpg',
+                'image' => '/storage/images/144.jpg',
+                'audio' => '/storage/audio/144.m4a',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
             ],
             [
                 'text' => 'медведь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/145.jpg',
+                'image' => '/storage/images/145.jpg',
+                'audio' => '/storage/audio/145.m4a',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
             ],
             [
                 'text' => 'рысь',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/146.jpg',
+                'image' => '/storage/images/146.jpg',
+                'audio' => '/storage/audio/146.m4a',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
             ],
             [
                 'text' => 'лось',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/147.jpg',
+                'image' => '/storage/images/147.jpg',
+                'audio' => '/storage/audio/147.m4a',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
             ],
             [
                 'text' => 'лиса',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/148.jpg',
+                'image' => '/storage/images/148.jpg',
+                'audio' => '/storage/audio/148.m4a',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
             ],
             [
                 'text' => 'рак',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/149.jpg',
+                'image' => '/storage/images/149.jpg',
+                'audio' => '/storage/audio/149.m4a',
                 'collections' => [
                     'Река', "Океан"
                 ],
             ],
             [
                 'text' => 'осьминог',
-                'image' => 'http://authentic.sergeybruhin.com/storage/images/150.jpg',
+                'image' => '/storage/images/150.jpg',
+                'audio' => '/storage/audio/150.m4a',
                 'collections' => [
                     "Океан",
                 ],
@@ -1047,6 +1192,7 @@ class WordsSeeder extends Seeder
             $wordCreated->text = $wordData['text'];
 //            $wordCreated->image = 'https://picsum.photos/id/' . $i . '/640/480';
             $wordCreated->image = $wordData['image'];
+            $wordCreated->audio = $wordData['audio'];
             $wordCreated->save();
 
             $tag = Tag::find($faker->numberBetween(1, $tagsCount));

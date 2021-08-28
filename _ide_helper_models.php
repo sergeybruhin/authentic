@@ -144,12 +144,11 @@ namespace App\Models{
  * @property int $id
  * @property string $text
  * @property string $image
+ * @property string|null $audio
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Collection[] $collections
  * @property-read int|null $collections_count
- * @property-read mixed $next
- * @property-read mixed $previous
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Tag[] $tags
  * @property-read int|null $tags_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\WordCollection[] $wordCollections
@@ -158,6 +157,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Word newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Word newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Word query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Word whereAudio($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Word whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Word whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Word whereImage($value)
@@ -188,12 +188,26 @@ namespace App\Models{
 /**
  * App\Models\WordCollection
  *
+ * @property int $id
+ * @property string $name
+ * @property string $slug
+ * @property string|null $image
+ * @property int|null $user_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Word[] $words
  * @property-read int|null $words_count
  * @method static \Database\Factories\WordCollectionFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollection newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollection newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollection query()
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereUserId($value)
  */
 	class WordCollection extends \Eloquent {}
 }
