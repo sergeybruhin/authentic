@@ -23,7 +23,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'яблоко',
                 'image' => '/storage/images/1.jpg',
-                'audio' => '/storage/audio/1.m4a',
+                'audio' => '/storage/audio/1.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -31,7 +31,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лук',
                 'image' => '/storage/images/2.jpg',
-                'audio' => '/storage/audio/2.m4a',
+                'audio' => '/storage/audio/2.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -39,7 +39,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'мандарин',
                 'image' => '/storage/images/3.jpg',
-                'audio' => '/storage/audio/3.m4a',
+                'audio' => '/storage/audio/3.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -47,7 +47,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'чеснок',
                 'image' => '/storage/images/4.jpg',
-                'audio' => '/storage/audio/4.m4a',
+                'audio' => '/storage/audio/4.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -55,7 +55,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'огурец',
                 'image' => '/storage/images/5.jpg',
-                'audio' => '/storage/audio/5.m4a',
+                'audio' => '/storage/audio/5.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -63,7 +63,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'банан',
                 'image' => '/storage/images/6.jpg',
-                'audio' => '/storage/audio/6.m4a',
+                'audio' => '/storage/audio/6.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -71,7 +71,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'помидор',
                 'image' => '/storage/images/7.jpg',
-                'audio' => '/storage/audio/7.m4a',
+                'audio' => '/storage/audio/7.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -79,7 +79,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'дыня',
                 'image' => '/storage/images/8.jpg',
-                'audio' => '/storage/audio/8.m4a',
+                'audio' => '/storage/audio/8.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -87,7 +87,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'груша',
                 'image' => '/storage/images/9.jpg',
-                'audio' => '/storage/audio/9.m4a',
+                'audio' => '/storage/audio/9.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -95,7 +95,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'апельсин',
                 'image' => '/storage/images/10.jpg',
-                'audio' => '/storage/audio/10.m4a',
+                'audio' => '/storage/audio/10.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -103,7 +103,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кокос',
                 'image' => '/storage/images/11.jpg',
-                'audio' => '/storage/audio/11.m4a',
+                'audio' => '/storage/audio/11.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -111,7 +111,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ананас',
                 'image' => '/storage/images/12.jpg',
-                'audio' => '/storage/audio/12.m4a',
+                'audio' => '/storage/audio/12.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -119,7 +119,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'слива',
                 'image' => '/storage/images/13.jpg',
-                'audio' => '/storage/audio/13.m4a',
+                'audio' => '/storage/audio/13.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -127,7 +127,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'виноград',
                 'image' => '/storage/images/14.jpg',
-                'audio' => '/storage/audio/14.m4a',
+                'audio' => '/storage/audio/14.mp3',
                 'collections' => [
                     'Фрукты'
                 ],
@@ -135,7 +135,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кастрюля',
                 'image' => '/storage/images/15.jpg',
-                'audio' => '/storage/audio/15.m4a',
+                'audio' => '/storage/audio/15.mp3',
                 'collections' => [
                     'Посуда', 'Кухня'
                 ],
@@ -143,7 +143,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'окно',
                 'image' => '/storage/images/16.jpg',
-                'audio' => '/storage/audio/16.m4a',
+                'audio' => '/storage/audio/16.mp3',
                 'collections' => [
                     'Дом', 'Комната'
                 ],
@@ -151,7 +151,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'наушники',
                 'image' => '/storage/images/17.jpg',
-                'audio' => '/storage/audio/17.m4a',
+                'audio' => '/storage/audio/17.mp3',
                 'collections' => [
                     'Техника', 'Комьютер'
                 ],
@@ -159,7 +159,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'чашка',
                 'image' => '/storage/images/18.jpg',
-                'audio' => '/storage/audio/18.m4a',
+                'audio' => '/storage/audio/18.mp3',
                 'collections' => [
                     'Посуда', 'Кухня'
                 ],
@@ -167,7 +167,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'шоколад',
                 'image' => '/storage/images/19.jpg',
-                'audio' => '/storage/audio/19.m4a',
+                'audio' => '/storage/audio/19.mp3',
                 'collections' => [
                     'Сладости', 'Еда'
                 ],
@@ -175,7 +175,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'стол',
                 'image' => '/storage/images/20.jpg',
-                'audio' => '/storage/audio/20.m4a',
+                'audio' => '/storage/audio/20.mp3',
                 'collections' => [
                     'Кухня', 'Комната', 'Мебель'
                 ],
@@ -183,7 +183,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'телефон',
                 'image' => '/storage/images/21.jpg',
-                'audio' => '/storage/audio/21.m4a',
+                'audio' => '/storage/audio/21.mp3',
                 'collections' => [
                     'Техника'
                 ],
@@ -191,7 +191,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'молоко',
                 'image' => '/storage/images/22.jpg',
-                'audio' => '/storage/audio/22.m4a',
+                'audio' => '/storage/audio/22.mp3',
                 'collections' => [
                     'Продукты', 'Еда'
                 ],
@@ -199,7 +199,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'часы',
                 'image' => '/storage/images/23.jpg',
-                'audio' => '/storage/audio/23.m4a',
+                'audio' => '/storage/audio/23.mp3',
                 'collections' => [
                     'Комната', 'Дом'
                 ],
@@ -207,7 +207,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'стул',
                 'image' => '/storage/images/24.jpg',
-                'audio' => '/storage/audio/24.m4a',
+                'audio' => '/storage/audio/24.mp3',
                 'collections' => [
                     'Комната', 'Кухня', 'Мебель'
                 ],
@@ -215,7 +215,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'рюкзак',
                 'image' => '/storage/images/25.jpg',
-                'audio' => '/storage/audio/25.m4a',
+                'audio' => '/storage/audio/25.mp3',
                 'collections' => [
                     'Аксессуары', 'Одежда'
                 ],
@@ -223,7 +223,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ноутбук',
                 'image' => '/storage/images/26.jpg',
-                'audio' => '/storage/audio/26.m4a',
+                'audio' => '/storage/audio/26.mp3',
                 'collections' => [
                     'Техника', 'Комьютер'
                 ],
@@ -231,7 +231,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'чайник',
                 'image' => '/storage/images/27.jpg',
-                'audio' => '/storage/audio/27.m4a',
+                'audio' => '/storage/audio/27.mp3',
                 'collections' => [
                     'Техника', 'Кухня'
                 ],
@@ -239,7 +239,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'морковь',
                 'image' => '/storage/images/28.jpg',
-                'audio' => '/storage/audio/28.m4a',
+                'audio' => '/storage/audio/28.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -247,7 +247,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'стакан',
                 'image' => '/storage/images/29.jpg',
-                'audio' => '/storage/audio/29.m4a',
+                'audio' => '/storage/audio/29.mp3',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
@@ -255,7 +255,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'мороженое',
                 'image' => '/storage/images/30.jpg',
-                'audio' => '/storage/audio/30.m4a',
+                'audio' => '/storage/audio/30.mp3',
                 'collections' => [
                     'Еда', 'Сладости'
                 ],
@@ -263,7 +263,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'эскимо',
                 'image' => '/storage/images/31.jpg',
-                'audio' => '/storage/audio/31.m4a',
+                'audio' => '/storage/audio/31.mp3',
                 'collections' => [
                     'Еда', 'Сладости'
                 ],
@@ -271,7 +271,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кровать',
                 'image' => '/storage/images/32.jpg',
-                'audio' => '/storage/audio/32.m4a',
+                'audio' => '/storage/audio/32.mp3',
                 'collections' => [
                     'Мебель', 'Комната'
                 ],
@@ -279,7 +279,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'вилка',
                 'image' => '/storage/images/33.jpg',
-                'audio' => '/storage/audio/33.m4a',
+                'audio' => '/storage/audio/33.mp3',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
@@ -287,7 +287,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ложка',
                 'image' => '/storage/images/34.jpg',
-                'audio' => '/storage/audio/34.m4a',
+                'audio' => '/storage/audio/34.mp3',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
@@ -295,7 +295,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'пианино',
                 'image' => '/storage/images/35.jpg',
-                'audio' => '/storage/audio/35.m4a',
+                'audio' => '/storage/audio/35.mp3',
                 'collections' => [
                     'Музыка'
                 ],
@@ -303,7 +303,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'книга',
                 'image' => '/storage/images/36.jpg',
-                'audio' => '/storage/audio/36.m4a',
+                'audio' => '/storage/audio/36.mp3',
                 'collections' => [
                     'Аксессуары'
                 ],
@@ -311,7 +311,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'капуста',
                 'image' => '/storage/images/37.jpg',
-                'audio' => '/storage/audio/37.m4a',
+                'audio' => '/storage/audio/37.mp3',
                 'collections' => [
                     'Овощи'
                 ],
@@ -319,7 +319,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'сковорода',
                 'image' => '/storage/images/38.jpg',
-                'audio' => '/storage/audio/38.m4a',
+                'audio' => '/storage/audio/38.mp3',
                 'collections' => [
                     'Кухня', 'Посуда'
                 ],
@@ -327,7 +327,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'шкаф',
                 'image' => '/storage/images/39.jpg',
-                'audio' => '/storage/audio/39.m4a',
+                'audio' => '/storage/audio/39.mp3',
                 'collections' => [
                     'Комната', 'Мебель'
                 ],
@@ -335,7 +335,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'колбаса',
                 'image' => '/storage/images/40.jpg',
-                'audio' => '/storage/audio/40.m4a',
+                'audio' => '/storage/audio/40.mp3',
                 'collections' => [
                     'Еда'
                 ],
@@ -343,7 +343,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'слон',
                 'image' => '/storage/images/41.jpg',
-                'audio' => '/storage/audio/41.m4a',
+                'audio' => '/storage/audio/41.mp3',
                 'collections' => [
                     'Животные'
                 ],
@@ -351,7 +351,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кепка',
                 'image' => '/storage/images/42.jpg',
-                'audio' => '/storage/audio/42.m4a',
+                'audio' => '/storage/audio/42.mp3',
                 'collections' => [
                     'Одежда'
                 ],
@@ -359,7 +359,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кресло',
                 'image' => '/storage/images/43.jpg',
-                'audio' => '/storage/audio/43.m4a',
+                'audio' => '/storage/audio/43.mp3',
                 'collections' => [
                     'Мебель'
                 ],
@@ -367,7 +367,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'мотоцикл',
                 'image' => '/storage/images/44.jpg',
-                'audio' => '/storage/audio/44.m4a',
+                'audio' => '/storage/audio/44.mp3',
                 'collections' => [
                     'Транспорт'
                 ],
@@ -375,7 +375,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'скейтборд',
                 'image' => '/storage/images/45.jpg',
-                'audio' => '/storage/audio/45.m4a',
+                'audio' => '/storage/audio/45.mp3',
                 'collections' => [
                     'Спорт'
                 ],
@@ -383,7 +383,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'печенье',
                 'image' => '/storage/images/46.jpg',
-                'audio' => '/storage/audio/46.m4a',
+                'audio' => '/storage/audio/46.mp3',
                 'collections' => [
                     'Еда', 'Сладкое'
                 ],
@@ -391,7 +391,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'самокат',
                 'image' => '/storage/images/47.jpg',
-                'audio' => '/storage/audio/47.m4a',
+                'audio' => '/storage/audio/47.mp3',
                 'collections' => [
                     'Транспорт', 'Спорт'
                 ],
@@ -399,7 +399,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'черника',
                 'image' => '/storage/images/48.jpg',
-                'audio' => '/storage/audio/1.m4a',
+                'audio' => '/storage/audio/1.mp3',
                 'collections' => [
                     'Ягоды'
                 ],
@@ -407,7 +407,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'автобус',
                 'image' => '/storage/images/49.jpg',
-                'audio' => '/storage/audio/49.m4a',
+                'audio' => '/storage/audio/49.mp3',
                 'collections' => [
                     'Транспорт', 'Город'
                 ],
@@ -415,7 +415,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'собака',
                 'image' => '/storage/images/50.jpg',
-                'audio' => '/storage/audio/50.m4a',
+                'audio' => '/storage/audio/50.mp3',
                 'collections' => [
                     'Животные', 'Домашние животные', 'Дерерня'
                 ],
@@ -423,7 +423,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'баран',
                 'image' => '/storage/images/51.jpg',
-                'audio' => '/storage/audio/51.m4a',
+                'audio' => '/storage/audio/51.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -431,7 +431,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'облако',
                 'image' => '/storage/images/52.jpg',
-                'audio' => '/storage/audio/52.m4a',
+                'audio' => '/storage/audio/52.mp3',
                 'collections' => [
                     'Природа',
                 ],
@@ -439,7 +439,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'троллейбус',
                 'image' => '/storage/images/53.jpg',
-                'audio' => '/storage/audio/53.m4a',
+                'audio' => '/storage/audio/53.mp3',
                 'collections' => [
                     'Город', 'Транспорт'
                 ],
@@ -447,7 +447,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'конфета',
                 'image' => '/storage/images/54.jpg',
-                'audio' => '/storage/audio/54.m4a',
+                'audio' => '/storage/audio/54.mp3',
                 'collections' => [
                     'Еда', 'Сладкое'
                 ],
@@ -455,7 +455,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'овца',
                 'image' => '/storage/images/55.jpg',
-                'audio' => '/storage/audio/55.m4a',
+                'audio' => '/storage/audio/55.mp3',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
@@ -463,7 +463,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'заяц',
                 'image' => '/storage/images/56.jpg',
-                'audio' => '/storage/audio/56.m4a',
+                'audio' => '/storage/audio/56.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -471,7 +471,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'куртка',
                 'image' => '/storage/images/57.jpg',
-                'audio' => '/storage/audio/57.m4a',
+                'audio' => '/storage/audio/57.mp3',
                 'collections' => [
                     'Одежда',
                 ],
@@ -479,7 +479,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'санки',
                 'image' => '/storage/images/58.jpg',
-                'audio' => '/storage/audio/58.m4a',
+                'audio' => '/storage/audio/58.mp3',
                 'collections' => [
                     'Спорт',
                 ],
@@ -487,7 +487,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'велосипед',
                 'image' => '/storage/images/59.jpg',
-                'audio' => '/storage/audio/59.m4a',
+                'audio' => '/storage/audio/59.mp3',
                 'collections' => [
                     'Спорт', 'Транспорт'
                 ],
@@ -495,7 +495,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'колонки',
                 'image' => '/storage/images/61.jpg',
-                'audio' => '/storage/audio/60.m4a',
+                'audio' => '/storage/audio/60.mp3',
                 'collections' => [
                     'Комната', 'Техника'
                 ],
@@ -503,7 +503,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'сок',
                 'image' => '/storage/images/62.jpg',
-                'audio' => '/storage/audio/62.m4a',
+                'audio' => '/storage/audio/62.mp3',
                 'collections' => [
                     'Еда', 'Напитки'
                 ],
@@ -511,7 +511,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'шапка',
                 'image' => '/storage/images/63.jpg',
-                'audio' => '/storage/audio/63.m4a',
+                'audio' => '/storage/audio/63.mp3',
                 'collections' => [
                     'Одежда', 'Головные уборы', 'Зима'
                 ],
@@ -519,7 +519,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'клюква',
                 'image' => '/storage/images/64.jpg',
-                'audio' => '/storage/audio/64.m4a',
+                'audio' => '/storage/audio/64.mp3',
                 'collections' => [
                     'Ягоды'
                 ],
@@ -527,7 +527,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'брусника',
                 'image' => '/storage/images/65.jpg',
-                'audio' => '/storage/audio/65.m4a',
+                'audio' => '/storage/audio/65.mp3',
                 'collections' => [
                     'Ягоды'
                 ],
@@ -535,7 +535,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'куст',
                 'image' => '/storage/images/66.jpg',
-                'audio' => '/storage/audio/66.m4a',
+                'audio' => '/storage/audio/66.mp3',
                 'collections' => [
                     'Город', 'Растения'
                 ],
@@ -543,7 +543,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'штаны',
                 'image' => '/storage/images/67.jpg',
-                'audio' => '/storage/audio/67.m4a',
+                'audio' => '/storage/audio/67.mp3',
                 'collections' => [
                     'Одежда',
                 ],
@@ -551,7 +551,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'циплёнок',
                 'image' => '/storage/images/68.jpg',
-                'audio' => '/storage/audio/68.m4a',
+                'audio' => '/storage/audio/68.mp3',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
@@ -559,7 +559,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ролики',
                 'image' => '/storage/images/69.jpg',
-                'audio' => '/storage/audio/69.m4a',
+                'audio' => '/storage/audio/69.mp3',
                 'collections' => [
                     'Спорт',
                 ],
@@ -567,7 +567,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'солнце',
                 'image' => '/storage/images/70.jpg',
-                'audio' => '/storage/audio/70.m4a',
+                'audio' => '/storage/audio/70.mp3',
                 'collections' => [
                     'Природа',
                 ],
@@ -575,7 +575,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лошадь',
                 'image' => '/storage/images/71.jpg',
-                'audio' => '/storage/audio/71.m4a',
+                'audio' => '/storage/audio/71.mp3',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
@@ -583,7 +583,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'футболка',
                 'image' => '/storage/images/72.jpg',
-                'audio' => '/storage/audio/72.m4a',
+                'audio' => '/storage/audio/72.mp3',
                 'collections' => [
                     'Одежда',
                 ],
@@ -591,7 +591,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кошка',
                 'image' => '/storage/images/73.jpg',
-                'audio' => '/storage/audio/73.m4a',
+                'audio' => '/storage/audio/73.mp3',
                 'collections' => [
                     'Животные', 'Домашние животные', 'Деревня'
                 ],
@@ -599,7 +599,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'курица',
                 'image' => '/storage/images/74.jpg',
-                'audio' => '/storage/audio/74.m4a',
+                'audio' => '/storage/audio/74.mp3',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
@@ -607,7 +607,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'коктейль',
                 'image' => '/storage/images/75.jpg',
-                'audio' => '/storage/audio/75.m4a',
+                'audio' => '/storage/audio/75.mp3',
                 'collections' => [
                     'Сладкое', 'Напитки', 'Кафе'
                 ],
@@ -615,7 +615,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'сноуборд',
                 'image' => '/storage/images/76.jpg',
-                'audio' => '/storage/audio/76.m4a',
+                'audio' => '/storage/audio/76.mp3',
                 'collections' => [
                     'Спорт', 'Зима'
                 ],
@@ -623,7 +623,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'тигр',
                 'image' => '/storage/images/77.jpg',
-                'audio' => '/storage/audio/77.m4a',
+                'audio' => '/storage/audio/77.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -631,7 +631,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'корова',
                 'image' => '/storage/images/78.jpg',
-                'audio' => '/storage/audio/78.m4a',
+                'audio' => '/storage/audio/78.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -639,7 +639,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'луна',
                 'image' => '/storage/images/79.jpg',
-                'audio' => '/storage/audio/79.m4a',
+                'audio' => '/storage/audio/79.mp3',
                 'collections' => [
                     'Природа',
                 ],
@@ -647,7 +647,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'коньки',
                 'image' => '/storage/images/81.jpg',
-                'audio' => '/storage/audio/81.m4a',
+                'audio' => '/storage/audio/81.mp3',
                 'collections' => [
                     'Спорт', 'Зима'
                 ],
@@ -655,7 +655,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'носки',
                 'image' => '/storage/images/82.jpg',
-                'audio' => '/storage/audio/82.m4a',
+                'audio' => '/storage/audio/82.mp3',
                 'collections' => [
                     'Одежда',
                 ],
@@ -663,7 +663,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'поезд',
                 'image' => '/storage/images/83.jpg',
-                'audio' => '/storage/audio/83.m4a',
+                'audio' => '/storage/audio/83.mp3',
                 'collections' => [
                     'Транспорт', 'Город'
                 ],
@@ -671,7 +671,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'дверь',
                 'image' => '/storage/images/84.jpg',
-                'audio' => '/storage/audio/84.m4a',
+                'audio' => '/storage/audio/84.mp3',
                 'collections' => [
                     'Комната',
                 ],
@@ -679,7 +679,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'козёл',
                 'image' => '/storage/images/85.jpg',
-                'audio' => '/storage/audio/85.m4a',
+                'audio' => '/storage/audio/85.mp3',
                 'collections' => [
                     'Животные', 'Деревня'
                 ],
@@ -687,7 +687,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'жираф',
                 'image' => '/storage/images/86.jpg',
-                'audio' => '/storage/audio/86.m4a',
+                'audio' => '/storage/audio/86.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -695,7 +695,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'телевизор',
                 'image' => '/storage/images/87.jpg',
-                'audio' => '/storage/audio/87.m4a',
+                'audio' => '/storage/audio/87.mp3',
                 'collections' => [
                     'Техника',
                 ],
@@ -703,7 +703,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'слива',
                 'image' => '/storage/images/88.jpg',
-                'audio' => '/storage/audio/88.m4a',
+                'audio' => '/storage/audio/88.mp3',
                 'collections' => [
                     'Фрукты',
                 ],
@@ -711,7 +711,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'клубника',
                 'image' => '/storage/images/89.jpg',
-                'audio' => '/storage/audio/89.m4a',
+                'audio' => '/storage/audio/89.mp3',
                 'collections' => [
                     'Ягоды',
                 ],
@@ -719,7 +719,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'морошка',
                 'image' => '/storage/images/90.jpg',
-                'audio' => '/storage/audio/90.m4a',
+                'audio' => '/storage/audio/90.mp3',
                 'collections' => [
                     'Ягоды',
                 ],
@@ -727,7 +727,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'трактор',
                 'image' => '/storage/images/91.jpg',
-                'audio' => '/storage/audio/91.m4a',
+                'audio' => '/storage/audio/91.mp3',
                 'collections' => [
                     'Транспорт', 'Деревня'
                 ],
@@ -735,7 +735,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'дерево',
                 'image' => '/storage/images/92.jpg',
-                'audio' => '/storage/audio/92.m4a',
+                'audio' => '/storage/audio/92.mp3',
                 'collections' => [
                     'Растения', 'Город'
                 ],
@@ -743,7 +743,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'голубь',
                 'image' => '/storage/images/93.jpg',
-                'audio' => '/storage/audio/93.m4a',
+                'audio' => '/storage/audio/93.mp3',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
@@ -751,7 +751,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лев',
                 'image' => '/storage/images/94.jpg',
-                'audio' => '/storage/audio/94.m4a',
+                'audio' => '/storage/audio/94.mp3',
                 'collections' => [
                     'Животные',
                 ],
@@ -759,7 +759,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лыжи',
                 'image' => '/storage/images/96.jpg',
-                'audio' => '/storage/audio/96.m4a',
+                'audio' => '/storage/audio/96.mp3',
                 'collections' => [
                     'Спорт',
                 ],
@@ -767,7 +767,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'тыква',
                 'image' => '/storage/images/97.jpg',
-                'audio' => '/storage/audio/97.m4a',
+                'audio' => '/storage/audio/97.mp3',
                 'collections' => [
                     'Овощи',
                 ],
@@ -775,7 +775,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'очки',
                 'image' => '/storage/images/99.jpg',
-                'audio' => '/storage/audio/99.m4a',
+                'audio' => '/storage/audio/99.mp3',
                 'collections' => [
                     'Аксессуары',
                 ],
@@ -783,7 +783,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ботинки',
                 'image' => '/storage/images/100.jpg',
-                'audio' => '/storage/audio/100.m4a',
+                'audio' => '/storage/audio/100.mp3',
                 'collections' => [
                     'Одежда', 'Обувь'
                 ],
@@ -791,7 +791,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'сапоги',
                 'image' => '/storage/images/101.jpg',
-                'audio' => '/storage/audio/101.m4a',
+                'audio' => '/storage/audio/101.mp3',
                 'collections' => [
                     'Одежда', 'Обувь'
                 ],
@@ -799,7 +799,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'енот',
                 'image' => '/storage/images/102.jpg',
-                'audio' => '/storage/audio/102.m4a',
+                'audio' => '/storage/audio/102.mp3',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
@@ -807,7 +807,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'крокодил',
                 'image' => '/storage/images/103.jpg',
-                'audio' => '/storage/audio/103.m4a',
+                'audio' => '/storage/audio/103.mp3',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
@@ -815,7 +815,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'жираф',
                 'image' => '/storage/images/104.jpg',
-                'audio' => '/storage/audio/104.m4a',
+                'audio' => '/storage/audio/104.mp3',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
@@ -823,7 +823,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'фотоаппарат',
                 'image' => '/storage/images/105.jpg',
-                'audio' => '/storage/audio/105.m4a',
+                'audio' => '/storage/audio/105.mp3',
                 'collections' => [
                     'Техника',
                 ],
@@ -831,7 +831,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'клавиатура',
                 'image' => '/storage/images/106.jpg',
-                'audio' => '/storage/audio/106.m4a',
+                'audio' => '/storage/audio/106.mp3',
                 'collections' => [
                     'Техника',
                 ],
@@ -839,7 +839,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кабан',
                 'image' => '/storage/images/107.jpg',
-                'audio' => '/storage/audio/107.m4a',
+                'audio' => '/storage/audio/107.mp3',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
@@ -847,7 +847,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'богомол',
                 'image' => '/storage/images/108.jpg',
-                'audio' => '/storage/audio/108.m4a',
+                'audio' => '/storage/audio/108.mp3',
                 'collections' => [
                     'Насекомые',
                 ],
@@ -855,7 +855,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ворона',
                 'image' => '/storage/images/109.jpg',
-                'audio' => '/storage/audio/109.m4a',
+                'audio' => '/storage/audio/109.mp3',
                 'collections' => [
                     'Город', 'Птицы'
                 ],
@@ -863,7 +863,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лягушка',
                 'image' => '/storage/images/110.jpg',
-                'audio' => '/storage/audio/110.m4a',
+                'audio' => '/storage/audio/110.mp3',
                 'collections' => [
                     'Лес', 'Животные'
                 ],
@@ -871,7 +871,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'бокал',
                 'image' => '/storage/images/111.jpg',
-                'audio' => '/storage/audio/111.m4a',
+                'audio' => '/storage/audio/111.mp3',
                 'collections' => [
                     'Посуда', 'Праздник'
                 ],
@@ -879,7 +879,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'салат',
                 'image' => '/storage/images/112.jpg',
-                'audio' => '/storage/audio/112.m4a',
+                'audio' => '/storage/audio/112.mp3',
                 'collections' => [
                     'Еда', 'Праздник'
                 ],
@@ -887,7 +887,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'орёл',
                 'image' => '/storage/images/113.jpg',
-                'audio' => '/storage/audio/113.m4a',
+                'audio' => '/storage/audio/113.mp3',
                 'collections' => [
                     'Птицы',
                 ],
@@ -895,7 +895,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'сова',
                 'image' => '/storage/images/114.jpg',
-                'audio' => '/storage/audio/114.m4a',
+                'audio' => '/storage/audio/114.mp3',
                 'collections' => [
                     'Птицы', 'Лес'
                 ],
@@ -903,7 +903,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'одеяло',
                 'image' => '/storage/images/115.jpg',
-                'audio' => '/storage/audio/115.m4a',
+                'audio' => '/storage/audio/115.mp3',
                 'collections' => [
                     'Комната', 'Постель'
                 ],
@@ -911,7 +911,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'пеликан',
                 'image' => '/storage/images/116.jpg',
-                'audio' => '/storage/audio/116.m4a',
+                'audio' => '/storage/audio/116.mp3',
                 'collections' => [
                     'Птицы',
                 ],
@@ -919,7 +919,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'муравей',
                 'image' => '/storage/images/117.jpg',
-                'audio' => '/storage/audio/117.m4a',
+                'audio' => '/storage/audio/117.mp3',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
@@ -927,7 +927,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'тарелка',
                 'image' => '/storage/images/118.jpg',
-                'audio' => '/storage/audio/118.m4a',
+                'audio' => '/storage/audio/118.mp3',
                 'collections' => [
                     'Посуда',
                 ],
@@ -935,7 +935,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'бабочка',
                 'image' => '/storage/images/119.jpg',
-                'audio' => '/storage/audio/119.m4a',
+                'audio' => '/storage/audio/119.mp3',
                 'collections' => [
                     'Насекомые',
                 ],
@@ -943,7 +943,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'стрекоза',
                 'image' => '/storage/images/121.jpg',
-                'audio' => '/storage/audio/121.m4a',
+                'audio' => '/storage/audio/121.mp3',
                 'collections' => [
                     'Насекомые',
                 ],
@@ -951,7 +951,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'обезьяна',
                 'image' => '/storage/images/122.jpg',
-                'audio' => '/storage/audio/122.m4a',
+                'audio' => '/storage/audio/122.mp3',
                 'collections' => [
                     'Животные', 'Дикие животные'
                 ],
@@ -959,7 +959,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'картофель фри',
                 'image' => '/storage/images/123.jpg',
-                'audio' => '/storage/audio/123.m4a',
+                'audio' => '/storage/audio/123.mp3',
                 'collections' => [
                     'Еда', 'Город', 'Фастфуд'
                 ],
@@ -967,7 +967,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'гамбургер',
                 'image' => '/storage/images/124.jpg',
-                'audio' => '/storage/audio/124.m4a',
+                'audio' => '/storage/audio/124.mp3',
                 'collections' => [
                     'Еда', 'Город', 'Фастфуд'
                 ],
@@ -975,7 +975,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'змея',
                 'image' => '/storage/images/125.jpg',
-                'audio' => '/storage/audio/125.m4a',
+                'audio' => '/storage/audio/125.mp3',
                 'collections' => [
                     'Пресмыкающиеся', 'Лес'
                 ],
@@ -983,7 +983,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'трусы',
                 'image' => '/storage/images/126.jpg',
-                'audio' => '/storage/audio/126.m4a',
+                'audio' => '/storage/audio/126.mp3',
                 'collections' => [
                     'Одежда',
                 ],
@@ -991,7 +991,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'ящерица',
                 'image' => '/storage/images/127.jpg',
-                'audio' => '/storage/audio/127.m4a',
+                'audio' => '/storage/audio/127.mp3',
                 'collections' => [
                     'Пресмыкающиеся',
                 ],
@@ -999,7 +999,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'пюре',
                 'image' => '/storage/images/128.jpg',
-                'audio' => '/storage/audio/128.m4a',
+                'audio' => '/storage/audio/128.mp3',
                 'collections' => [
                     'Еда',
                 ],
@@ -1007,7 +1007,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'бусы',
                 'image' => '/storage/images/129.jpg',
-                'audio' => '/storage/audio/129.m4a',
+                'audio' => '/storage/audio/129.mp3',
                 'collections' => [
                     'Аксессуары',
                 ],
@@ -1015,7 +1015,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'чайка',
                 'image' => '/storage/images/130.jpg',
-                'audio' => '/storage/audio/130.m4a',
+                'audio' => '/storage/audio/130.mp3',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
@@ -1023,7 +1023,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'фламинго',
                 'image' => '/storage/images/131.jpg',
-                'audio' => '/storage/audio/131.m4a',
+                'audio' => '/storage/audio/131.mp3',
                 'collections' => [
                     'Птицы',
                 ],
@@ -1031,7 +1031,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'свинья',
                 'image' => '/storage/images/132.jpg',
-                'audio' => '/storage/audio/132.m4a',
+                'audio' => '/storage/audio/132.mp3',
                 'collections' => [
                     'Животные', 'Домашние животные'
                 ],
@@ -1039,7 +1039,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'паук',
                 'image' => '/storage/images/133.jpg',
-                'audio' => '/storage/audio/133.m4a',
+                'audio' => '/storage/audio/133.mp3',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
@@ -1047,7 +1047,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'чай',
                 'image' => '/storage/images/134.jpg',
-                'audio' => '/storage/audio/134.m4a',
+                'audio' => '/storage/audio/134.mp3',
                 'collections' => [
                     'Напитки',
                 ],
@@ -1055,7 +1055,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'воробей',
                 'image' => '/storage/images/135.jpg',
-                'audio' => '/storage/audio/135.m4a',
+                'audio' => '/storage/audio/135.mp3',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
@@ -1063,7 +1063,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => '',
                 'image' => '/storage/images/135.jpg',
-                'audio' => '/storage/audio/136.m4a',
+                'audio' => '/storage/audio/136.mp3',
                 'collections' => [
                     'Птицы', 'Город'
                 ],
@@ -1071,7 +1071,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'божья коровка',
                 'image' => '/storage/images/137.jpg',
-                'audio' => '/storage/audio/137.m4a',
+                'audio' => '/storage/audio/137.mp3',
                 'collections' => [
                     'Насекомые', 'Лес'
                 ],
@@ -1079,7 +1079,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кузнечик',
                 'image' => '/storage/images/138.jpg',
-                'audio' => '/storage/audio/138.m4a',
+                'audio' => '/storage/audio/138.mp3',
                 'collections' => [
                     'Насекомые',
                 ],
@@ -1087,7 +1087,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'мухы',
                 'image' => '/storage/images/139.jpg',
-                'audio' => '/storage/audio/139.m4a',
+                'audio' => '/storage/audio/139.mp3',
                 'collections' => [
                     'Насекомые',
                 ],
@@ -1095,7 +1095,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'нагетсы',
                 'image' => '/storage/images/140.jpg',
-                'audio' => '/storage/audio/140.m4a',
+                'audio' => '/storage/audio/140.mp3',
                 'collections' => [
                     'Еда', "Фастфуд"
                 ],
@@ -1103,7 +1103,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'пингвин',
                 'image' => '/storage/images/141.jpg',
-                'audio' => '/storage/audio/141.m4a',
+                'audio' => '/storage/audio/141.mp3',
                 'collections' => [
                     'Птицы', "Северный полюс"
                 ],
@@ -1111,7 +1111,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'акула',
                 'image' => '/storage/images/142.jpg',
-                'audio' => '/storage/audio/142.m4a',
+                'audio' => '/storage/audio/142.mp3',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
@@ -1119,7 +1119,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'дельфин',
                 'image' => '/storage/images/143.jpg',
-                'audio' => '/storage/audio/143.m4a',
+                'audio' => '/storage/audio/143.mp3',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
@@ -1127,7 +1127,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'кит',
                 'image' => '/storage/images/144.jpg',
-                'audio' => '/storage/audio/144.m4a',
+                'audio' => '/storage/audio/144.mp3',
                 'collections' => [
                     'Рыбы', "Океан"
                 ],
@@ -1135,7 +1135,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'медведь',
                 'image' => '/storage/images/145.jpg',
-                'audio' => '/storage/audio/145.m4a',
+                'audio' => '/storage/audio/145.mp3',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
@@ -1143,7 +1143,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'рысь',
                 'image' => '/storage/images/146.jpg',
-                'audio' => '/storage/audio/146.m4a',
+                'audio' => '/storage/audio/146.mp3',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
@@ -1151,7 +1151,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лось',
                 'image' => '/storage/images/147.jpg',
-                'audio' => '/storage/audio/147.m4a',
+                'audio' => '/storage/audio/147.mp3',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
@@ -1159,7 +1159,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'лиса',
                 'image' => '/storage/images/148.jpg',
-                'audio' => '/storage/audio/148.m4a',
+                'audio' => '/storage/audio/148.mp3',
                 'collections' => [
                     'Животные', "Дикие животные", 'Лес'
                 ],
@@ -1167,7 +1167,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'рак',
                 'image' => '/storage/images/149.jpg',
-                'audio' => '/storage/audio/149.m4a',
+                'audio' => '/storage/audio/149.mp3',
                 'collections' => [
                     'Река', "Океан"
                 ],
@@ -1175,7 +1175,7 @@ class WordsSeeder extends Seeder
             [
                 'text' => 'осьминог',
                 'image' => '/storage/images/150.jpg',
-                'audio' => '/storage/audio/150.m4a',
+                'audio' => '/storage/audio/150.mp3',
                 'collections' => [
                     "Океан",
                 ],
