@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
 class PageController extends Controller
@@ -13,6 +14,19 @@ class PageController extends Controller
      */
     public function home(): View
     {
-        return view('admin.pages.home.master');
+        $user = User::find(Auth::user()->id);
+        return view('admin.pages.home.master')
+            ->with(compact('user'));
     }
+
+    /**
+     * @return View
+     */
+    public function settings(): View
+    {
+        $user = User::find(Auth::user()->id);
+        return view('admin.pages.settings.master')
+            ->with(compact('user'));
+    }
+
 }

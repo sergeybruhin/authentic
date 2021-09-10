@@ -3,9 +3,11 @@
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\Frontend\PhraseController;
 use App\Http\Controllers\Frontend\WordController;
+use App\Http\Controllers\Frontend\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\WordCollectionController;
 use App\Http\Controllers\Frontend\TagController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -51,5 +53,12 @@ Route::prefix('tags')
     ->group(function () {
         Route::get('/', [TagController::class, 'index'])->name('index');
         Route::get('{id}', [TagController::class, 'show'])->name('show');
+    });
+
+
+Route::prefix('auth')
+    ->group(function () {
+        Route::get('/login', [LoginController::class, 'login'])->name('login');
+        Route::post('/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
     });
 
