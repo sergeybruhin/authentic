@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\PageController;
-use App\Http\Controllers\Profile\LogoutController;
+use App\Http\Controllers\Admin\LogoutController;
 use Illuminate\Support\Facades\Route;
 
 
