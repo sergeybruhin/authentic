@@ -1,59 +1,64 @@
 @extends('frontend.layouts.default.master')
 @section('content')
-    @include('frontend.widgets.success-modal.master',['redirectRoute' => 'phraseCollections.index'])
-    <div class="container pt-5 pb-4">
-        <div class="row " style="display: flex; flex-wrap: wrap;">
-            <div class="col-lg-6">
-                @include('frontend.widgets.editor.master')
-            </div>
-            <div class="col-10 col-sm-8 col-lg-6">
-                <div class="" style="max-height: 78vh;height: 100%">
-                    <img class="img-fluid" src="{{ $phrase->image }}" alt="" style="max-height: 78vh">
-                    <h4 class="text-center my-3">{{ Str::upper($phrase->text) }}</h4>
-                </div>
+    <section style="background-color: #b8cce1">
 
+
+        @include('frontend.widgets.success-modal.master',['redirectRoute' => 'phraseCollections.index'])
+        <div class="container pt-5 pb-4">
+            <div class="row " style="display: flex; flex-wrap: wrap;">
+                <div class="col-lg-6">
+                    @include('frontend.widgets.editor.master')
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <div class="" style="max-height: 78vh;height: 100%">
+                        <img class="img-fluid" src="{{ $phrase->image }}" alt="" style="max-height: 78vh">
+                        <h4 class="text-center my-3">{{ Str::upper($phrase->text) }}</h4>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container pb-4">
-        <div class="row">
-            <div class="col">
-                @if($previousPhrase)
-                    <a id="prevButton" class="btn btn-primary btn-lg text-uppercase px-4"
-                       style="display: none;border-radius: 20px"
-                       href="{{ route('phrases.show', $previousPhrase->id) }}">👈 <span class="mx-2"></span> Назад</a>
-                @endif
-            </div>
-            <div class="col text-end">
-                @if($nextPhrase)
-                    @if(isset($phraseCollection))
-                        <a id="nextButton" class="btn btn-primary btn-lg text-uppercase px-4"
-                           style="display: none;border-radius: 20px"
-                           href="{{ route('phraseCollections.showPhrase', [$phraseCollection->id, $nextPhrase->id]) }}">Вперёд
-                            👉</a>
-                    @else
-                        <a id="nextButton" class="btn btn-primary btn-lg text-uppercase px-4"
-                           style="display: none;border-radius: 20px"
-                           href="{{ route('phrases.show', $nextPhrase->id) }}">Вперёд 👉</a>
-                    @endif
-                @endif
-            </div>
-        </div>
-        @if(isset($phraseCollection))
+        <div class="container pb-4">
             <div class="row">
                 <div class="col">
-                    <div class="text-left text-gray">
-                        Коллекция: {{ $phraseCollection->name }}
-                    </div>
+                    @if($previousPhrase)
+                        <a id="prevButton" class="btn btn-primary btn-lg text-uppercase px-4"
+                           style="display: none;border-radius: 20px"
+                           href="{{ route('phrases.show', $previousPhrase->id) }}">👈 <span class="mx-2"></span>
+                            Назад</a>
+                    @endif
+                </div>
+                <div class="col text-end">
+                    @if($nextPhrase)
+                        @if(isset($phraseCollection))
+                            <a id="nextButton" class="btn btn-primary btn-lg text-uppercase px-4"
+                               style="display: none;border-radius: 20px"
+                               href="{{ route('phraseCollections.showPhrase', [$phraseCollection->id, $nextPhrase->id]) }}">Вперёд
+                                👉</a>
+                        @else
+                            <a id="nextButton" class="btn btn-primary btn-lg text-uppercase px-4"
+                               style="display: none;border-radius: 20px"
+                               href="{{ route('phrases.show', $nextPhrase->id) }}">Вперёд 👉</a>
+                        @endif
+                    @endif
                 </div>
             </div>
+            @if(isset($phraseCollection))
+                <div class="row">
+                    <div class="col">
+                        <div class="text-left text-gray">
+                            Коллекция: {{ $phraseCollection->name }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+        </div>
+        <audio id="successPhraseSound" src="/storage/sounds/success-phrase.mp3" preload="auto"></audio>
+        <audio id="successCollectionSound" src="/storage/sounds/success-collection.wav" preload="auto"></audio>
+        @if($phrase->audio)
+            <audio id="phraseVoiceover" src="{{ $phrase->audio }}" preload="auto"></audio>
         @endif
-    </div>
-    <audio id="successPhraseSound" src="/storage/sounds/success-phrase.mp3" preload="auto"></audio>
-    <audio id="successCollectionSound" src="/storage/sounds/success-collection.wav" preload="auto"></audio>
-    @if($phrase->audio)
-        <audio id="phraseVoiceover" src="{{ $phrase->audio }}" preload="auto"></audio>
-    @endif
+    </section>
 @endsection
 
 @section('scripts')

@@ -1,6 +1,6 @@
 @extends('frontend.layouts.default.master')
 @section('header')
-    <section class="py-5 text-center" style="background-color: #d9bc55;background-image: url('https://unsplash.com/photos/4-4WPFLVhAY/1280x448')">
+    <section class="py-5 text-center" style="background-color: #fff;">
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
@@ -42,27 +42,26 @@
 
 
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col">
-                <h1>Фразы</h1>
+    {{-- ФРАЗЫ--}}
+    <section class="pb-4" style="background-color: #b8cce1">
+        <div class="container py-5" >
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="mb-5" style="color: #0e6283">Фразы</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                @forelse(\App\Models\PhraseCollection::withCount('phrases')->orderByDesc('phrases_count')->take(6)->get() as $phraseCollection)
+                    <div class="col-4">
+                        @include('frontend.templates.phrase-collection.preview.master',['phraseCollection' => $phraseCollection])
+                    </div>
+                @empty
+                    <div class="col">
+                        <h3>Нет данных</h3>
+                    </div>
+                @endforelse
             </div>
         </div>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-            @forelse(\App\Models\Phrase::all() as $phrase)
-                <div class="col">
-                    @include('frontend.templates.phrase.preview.master',['phrase' => $phrase])
-                </div>
-            @empty
-                <div class="col">
-                    <h3>Нет данных</h3>
-                </div>
-            @endforelse
-        </div>
-
-    </div>
+    </section>
 
 @endsection

@@ -1,5 +1,8 @@
 @extends('frontend.layouts.default.master')
 @section('content')
+    <section style="background-color: #b8d9e1">
+
+
     @include('frontend.widgets.success-modal.master',['redirectRoute' => 'wordCollections.index'])
     <div class="container pt-5 pb-4">
         <div class="row " style="display: flex; flex-wrap: wrap;">
@@ -54,6 +57,7 @@
     @if($word->audio)
         <audio id="wordVoiceover" src="{{ $word->audio }}" preload="auto"></audio>
     @endif
+    </section>
 @endsection
 
 @section('scripts')
