@@ -30,8 +30,8 @@ class CreateWordWordCollectionTable extends Migration
     public function down()
     {
         Schema::table('word_word_collection', function (Blueprint $table) {
-            $table->dropForeign('word_id');
-            $table->dropForeign('word_collection_id');
+            $table->dropForeign(['word_id']);
+            $table->dropForeign(['word_collection_id']);
         });
         Schema::dropIfExists('word_word_collection');
     }

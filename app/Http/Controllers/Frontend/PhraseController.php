@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Phrase;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class PhraseController extends Controller
@@ -26,6 +25,7 @@ class PhraseController extends Controller
      */
     public function show($id): View
     {
+
         $phrase = Phrase::findOrFail($id);
         $previousPhrase = null;
         $nextPhrase = null;
@@ -40,9 +40,12 @@ class PhraseController extends Controller
             $nextPhrase = Phrase::find($nextId);
         }
 
+
+//        dd($previousPhrase->toArray(), $nextPhrase->toArray());
+
         return view('frontend.pages.phrase.master')
             ->with(compact('phrase'))
-            ->with(compact('previousPhrase'))
-            ->with(compact('nextPhrase'));
+            ->with(compact('nextPhrase'))
+            ->with(compact('previousPhrase'));
     }
 }

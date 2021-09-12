@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\PageController;
+use App\Http\Controllers\Frontend\PhraseCollectionController;
 use App\Http\Controllers\Frontend\PhraseController;
 use App\Http\Controllers\Frontend\WordController;
 use App\Http\Controllers\Frontend\LoginController;
@@ -45,6 +46,23 @@ Route::prefix('word-collections')
         Route::get('/', [WordCollectionController::class, 'index'])->name('index');
         Route::get('{id}', [WordCollectionController::class, 'show'])->name('show');
         Route::get('{id}/{wordId}', [WordCollectionController::class, 'showWord'])->name('showWord');
+    });
+
+
+Route::prefix('phrases')
+    ->name('phrases.')
+    ->group(function () {
+        Route::get('/', [PhraseController::class, 'index'])->name('index');
+        Route::get('{id}', [PhraseController::class, 'show'])->name('show');
+    });
+
+
+Route::prefix('phrase-collections')
+    ->name('phraseCollections.')
+    ->group(function () {
+        Route::get('/', [PhraseCollectionController::class, 'index'])->name('index');
+        Route::get('{id}', [PhraseCollectionController::class, 'show'])->name('show');
+        Route::get('{id}/{phraseId}', [PhraseCollectionController::class, 'showPhrase'])->name('showPhrase');
     });
 
 

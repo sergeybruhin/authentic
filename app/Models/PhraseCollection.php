@@ -2,23 +2,22 @@
 
 namespace App\Models;
 
-use App\Traits\Morphs\Taggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Phrase extends Model
+class PhraseCollection extends Model
 {
     use HasFactory;
-    use Taggable;
 
     /**
      * @return BelongsToMany
      */
-    public function phraseCollections(): BelongsToMany
+    public function phrases(): BelongsToMany
     {
         return $this->belongsToMany(
-            PhraseCollection::class,
-        );
+            Phrase::class,
+        )->withPivot('order')
+            ->orderByPivot('order');
     }
 }

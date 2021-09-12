@@ -701,14 +701,6 @@ class WordsSeeder extends Seeder
                 ],
             ],
             [
-                'text' => 'слива',
-                'image' => '/storage/images/88.jpg',
-                'audio' => '/storage/audio/88.mp3',
-                'collections' => [
-                    'Фрукты',
-                ],
-            ],
-            [
                 'text' => 'клубника',
                 'image' => '/storage/images/89.jpg',
                 'audio' => '/storage/audio/89.mp3',
