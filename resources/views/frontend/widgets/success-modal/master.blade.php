@@ -8,7 +8,7 @@
                 <h1>⭐️️⭐️️⭐️️</h1>
             </div>
             <div class="w-successModal__footer">
-                <a href="{{ route('wordCollections.index') }}" type="button" class="btn btn-primary px-5 btn-lg mr-3">ДАЛЬШЕ
+                <a href="{{ route($redirectRoute) }}" type="button" class="btn btn-primary px-5 btn-lg mr-3">ДАЛЬШЕ
                     <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>

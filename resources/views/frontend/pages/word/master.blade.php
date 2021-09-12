@@ -1,6 +1,6 @@
 @extends('frontend.layouts.default.master')
 @section('content')
-    @include('frontend.widgets.success-modal.master')
+    @include('frontend.widgets.success-modal.master',['redirectRoute' => 'wordCollections.index'])
     <div class="container pt-5 pb-4">
         <div class="row " style="display: flex; flex-wrap: wrap;">
             <div class="col-lg-6">
@@ -70,9 +70,9 @@
         }
         const playWordVoiceover = function () {
             if (wordVoiceover) {
-                setTimeout(function() {
+                setTimeout(function () {
                     wordVoiceover.play();
-                },100)
+                }, 100)
 
             }
         }

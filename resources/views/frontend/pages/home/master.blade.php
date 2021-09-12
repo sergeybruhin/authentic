@@ -8,7 +8,7 @@
                     <p class="lead text-muted">Простой и удобный тренажёр печати на комьютере для детей со сложностями восприятия речи</p>
                     <p>
                         <a href="{{ route('wordCollections.index') }}" class="btn btn-lg btn-primary my-2 px-5 me-4" style="border-radius: 40px;">Слова</a>
-                        <a href="{{ route('wordCollections.index') }}" class="btn btn-lg btn-secondary my-2 px-5" style="border-radius: 40px;">Фразы</a>
+                        <a href="{{ route('phraseCollections.index') }}" class="btn btn-lg btn-secondary my-2 px-5" style="border-radius: 40px;">Фразы</a>
                     </p>
                 </div>
             </div>
