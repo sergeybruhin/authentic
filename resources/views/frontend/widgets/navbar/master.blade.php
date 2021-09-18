@@ -26,18 +26,21 @@
         </a>
         {{--        <a href="{{ route('words.index') }}" class="text-white">Слова</a>--}}
         {{--        <a href="{{ route('phrases.index') }}" class="text-white">Фразы</a>--}}
-        <a href="{{ route('wordCollections.index') }}" class="nav-link text-dark"><i class="fas fa-th-large me-2"></i> Слова</a>
-        <a href="{{ route('phraseCollections.index') }}" class="nav-link text-dark"><i class="fas fa-th-list me-2"></i> Фразы</a>
-        <a href="{{ route('admin.home') }}" class="nav-link text-dark"><i
-                class="fas fa-cog me-2"></i> Админ панель</a>
+        <a href="{{ route('wordCollections.index') }}" class="nav-link text-dark"><i class="fas fa-th-large me-2"></i>
+            Слова</a>
+        <a href="{{ route('phraseCollections.index') }}" class="nav-link text-dark"><i class="fas fa-th-list me-2"></i>
+            Фразы</a>
 
-        <a href="#" style="text-decoration: none;color: #646100d4" class="e-fullscreenToggle" id="fullscreenToggle"><i
-                class="fas fa-expand"></i></a>
+        @include('common.widgets.navbar-profile.master')
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
+        {{--        <a href="#" style="text-decoration: none;color: #646100d4" class="e-fullscreenToggle" id="fullscreenToggle"><i--}}
+        {{--                class="fas fa-expand"></i></a>--}}
+
+        {{--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"--}}
+        {{--                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">--}}
+        {{--            <span class="navbar-toggler-icon"></span>--}}
+        {{--        </button>--}}
 
 
     </div>

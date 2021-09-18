@@ -1,0 +1,12 @@
+.w-navbarProfile {
+    &__avatar {
+        vertical-align: middle;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-image: url("./assets/user.svg");
+        background-position: center center;
+        background-size: contain;
+    }
+}
