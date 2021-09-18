@@ -1172,6 +1172,86 @@ class WordsSeeder extends Seeder
                     "Океан",
                 ],
             ],
+            [
+                'text' => 'красный',
+                'image' => '/storage/images/151.jpg',
+                'audio' => '/storage/audio/151.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'оранжевый',
+                'image' => '/storage/images/152.jpg',
+                'audio' => '/storage/audio/152.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'жёлтый',
+                'image' => '/storage/images/153.jpg',
+                'audio' => '/storage/audio/153.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'зелёный',
+                'image' => '/storage/images/154.jpg',
+                'audio' => '/storage/audio/154.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'голубой',
+                'image' => '/storage/images/155.jpg',
+                'audio' => '/storage/audio/155.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'синий',
+                'image' => '/storage/images/156.jpg',
+                'audio' => '/storage/audio/156.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'фиолетовый',
+                'image' => '/storage/images/157.jpg',
+                'audio' => '/storage/audio/157.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'коричневый',
+                'image' => '/storage/images/158.jpg',
+                'audio' => '/storage/audio/158.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'розовый',
+                'image' => '/storage/images/159.jpg',
+                'audio' => '/storage/audio/159.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
+            [
+                'text' => 'чёрный',
+                'image' => '/storage/images/160.jpg',
+                'audio' => '/storage/audio/160.mp3',
+                'collections' => [
+                    "Цвета",
+                ],
+            ],
         ];
 
         $faker = Factory::create();
