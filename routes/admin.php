@@ -12,6 +12,7 @@ Route::name('admin.')->group(function () {
     Route::get('/', [PageController::class, 'home'])->name('home');
     Route::get('settings', [PageController::class, 'settings'])->name('settings');
     Route::get('profiles/{id}', [ProfileController::class, 'show'])->name('profiles.show');
+    Route::post('profiles', [ProfileController::class, 'store'])->name('profiles.store');
 
 });
 

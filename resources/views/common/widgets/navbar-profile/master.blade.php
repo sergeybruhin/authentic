@@ -16,6 +16,7 @@
 
 
         <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+            <li><a class="dropdown-item" href="{{ route('admin.home') }}">Панель</a></li>
             <li><a class="dropdown-item" href="{{ route('admin.settings') }}">Настройки</a></li>
             <li>
                 <hr class="dropdown-divider">
