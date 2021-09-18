@@ -4,7 +4,9 @@
     <div class="w-loginForm" style="max-width: 340px;margin:auto">
         <form method="POST" action="{{ route('authenticate') }}" class="form-signin">
             @csrf
-            <div class="text-center" style="font-size: 40px;max-width:80px;margin: auto;margin-top: 1rem;font-weight: bold;color: royalblue;background-color: #cbd5e0;border-radius: 8px;">A</div>
+            <div class="text-center" style="font-size: 40px;max-width:80px;margin: auto;margin-top: 1rem;font-weight: bold;color: royalblue;background-color: #cbd5e0;border-radius: 8px;">
+                <img style="max-width: 100%" src="/apple-touch-icon.png" alt="">
+            </div>
 
             <h1 class="h3 mb-3 font-weight-normal text-center mt-4">Вход</h1>
             <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Электронная почтав" required=""
