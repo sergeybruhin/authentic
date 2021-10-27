@@ -11,6 +11,11 @@ use Laravel\Nova\Fields\Text;
 class User extends Resource
 {
     /**
+     * @var string
+     */
+    public static $group = 'Система';
+
+    /**
      * The model the resource corresponds to.
      *
      * @var string
