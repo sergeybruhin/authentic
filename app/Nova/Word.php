@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Davidpiesse\Audio\Audio;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
@@ -66,6 +67,8 @@ class Word extends Resource
             Audio::make('Audio', 'audio')
                 ->disk('audio')
                 ->nullable(),
+
+            BelongsToMany::make('Коллекции', 'wordCollections', WordColleсtion::class),
 
         ];
     }

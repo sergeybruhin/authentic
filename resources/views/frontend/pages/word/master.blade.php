@@ -11,7 +11,7 @@
             </div>
             <div class="col-10 col-sm-8 col-lg-6">
                 <div class="" style="max-height: 78vh;height: 100%">
-                    <img class="img-fluid" src="{{ $word->image }}" alt="" style="max-height: 78vh">
+                    <img class="img-fluid" src="{{ Storage::disk('images')->url($word->image) }}" alt="" style="max-height: 78vh">
                     <h4 class="text-center my-3">{{ Str::upper($word->text) }}</h4>
                 </div>
 

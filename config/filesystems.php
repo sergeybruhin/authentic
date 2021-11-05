@@ -49,6 +49,11 @@ return [
             'visibility' => 'public',
         ],
 
+        'seeder' => [
+            'driver' => 'local',
+            'root' => storage_path('app/seeder'),
+        ],
+
         'audio' => [
             'driver' => 'local',
             'root' => storage_path('app/public/audio'),

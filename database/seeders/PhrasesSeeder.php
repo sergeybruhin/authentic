@@ -6,8 +6,13 @@ use App\Models\Phrase;
 use App\Models\PhraseCollection;
 use App\Models\Tag;
 use Faker\Factory;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Throwable;
+use Exception;
 
 class PhrasesSeeder extends Seeder
 {
@@ -21,7 +26,7 @@ class PhrasesSeeder extends Seeder
         $phrases = [
             [
                 'text' => 'красное яблоко',
-                'image' => '/storage/images/1.jpg',
+                'image' => '1.jpg',
                 'collections' => [
                     'Фрукты', 'Цвета'
                 ],
@@ -29,42 +34,42 @@ class PhrasesSeeder extends Seeder
 
             [
                 'text' => 'чёрная сковорода',
-                'image' => '/storage/images/38.jpg',
+                'image' => '38.jpg',
                 'collections' => [
                     'Посуда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'серый слон',
-                'image' => '/storage/images/41.jpg',
+                'image' => '41.jpg',
                 'collections' => [
                     'Животные', 'Цвета'
                 ],
             ],
             [
                 'text' => 'коричневая лошадь',
-                'image' => '/storage/images/71.jpg',
+                'image' => '71.jpg',
                 'collections' => [
                     'Животные', 'Цвета'
                 ],
             ],
             [
                 'text' => 'розовая свинья',
-                'image' => '/storage/images/132.jpg',
+                'image' => '132.jpg',
                 'collections' => [
                     'Животные', 'Цвета'
                 ],
             ],
             [
                 'text' => 'рыжая лиса',
-                'image' => '/storage/images/148.jpg',
+                'image' => '148.jpg',
                 'collections' => [
                     'Животные', 'Цвета'
                 ],
             ],
             [
                 'text' => 'синий троллейбус',
-                'image' => '/storage/images/53.jpg',
+                'image' => '53.jpg',
                 'collections' => [
                     'Транспорт', 'Цвета'
                 ],
@@ -72,154 +77,154 @@ class PhrasesSeeder extends Seeder
 
             [
                 'text' => 'прозрачный бокал',
-                'image' => '/storage/images/111.jpg',
+                'image' => '111.jpg',
                 'collections' => [
                     'Посуда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'чёрный рюкзак',
-                'image' => '/storage/images/25.jpg',
+                'image' => '25.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'красная кепка',
-                'image' => '/storage/images/42.jpg',
+                'image' => '42.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'жёлтая куртка',
-                'image' => '/storage/images/57.jpg',
+                'image' => '57.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'зелёная шапка',
-                'image' => '/storage/images/63.jpg',
+                'image' => '63.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'серые штаны',
-                'image' => '/storage/images/67.jpg',
+                'image' => '67.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'оранжевая футболка',
-                'image' => '/storage/images/72.jpg',
+                'image' => '72.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'жёлтые сапоги',
-                'image' => '/storage/images/101.jpg',
+                'image' => '101.jpg',
                 'collections' => [
                     'Одежда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'зелёный виноград',
-                'image' => '/storage/images/14.jpg',
+                'image' => '14.jpg',
                 'collections' => [
                     'Фрукты', 'Цвета'
                 ],
             ],
             [
                 'text' => 'голубая чашка',
-                'image' => '/storage/images/18.jpg',
+                'image' => '18.jpg',
                 'collections' => [
                     'Посуда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'синяя слива',
-                'image' => '/storage/images/13.jpg',
+                'image' => '13.jpg',
                 'collections' => [
                     'Фрукты', 'Цвета'
                 ],
             ],
             [
                 'text' => 'оранжевый апельсин',
-                'image' => '/storage/images/10.jpg',
+                'image' => '10.jpg',
                 'collections' => [
                     'Фрукты', 'Цвета'
                 ],
             ],
             [
                 'text' => 'коричневый кокос',
-                'image' => '/storage/images/11.jpg',
+                'image' => '11.jpg',
                 'collections' => [
                     'Фрукты', 'Цвета'
                 ],
             ],
             [
                 'text' => 'красная божья коровка',
-                'image' => '/storage/images/137.jpg',
+                'image' => '137.jpg',
                 'collections' => [
                     'Насекомые', 'Цвета'
                 ],
             ],
             [
                 'text' => 'коричневый муравей',
-                'image' => '/storage/images/117.jpg',
+                'image' => '117.jpg',
                 'collections' => [
                     'Насекомые', 'Цвета'
                 ],
             ],
             [
                 'text' => 'серая сова',
-                'image' => '/storage/images/114.jpg',
+                'image' => '114.jpg',
                 'collections' => [
                     'Птицы', 'Цвета'
                 ],
             ],
             [
                 'text' => 'белое полотенце',
-                'image' => '/storage/images/115.jpg',
+                'image' => '115.jpg',
                 'collections' => [
                     'Комната', 'Цвета'
                 ],
             ],
             [
                 'text' => 'чёрные колонки',
-                'image' => '/storage/images/61.jpg',
+                'image' => '61.jpg',
                 'collections' => [
                     'Комната', 'Цвета'
                 ],
             ],
             [
                 'text' => 'белая дверь',
-                'image' => '/storage/images/84.jpg',
+                'image' => '84.jpg',
                 'collections' => [
                     'Комната', 'Цвета'
                 ],
             ],
             [
                 'text' => 'коричневый шоколад',
-                'image' => '/storage/images/19.jpg',
+                'image' => '19.jpg',
                 'collections' => [
                     'Еда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'жёлтое пюре',
-                'image' => '/storage/images/128.jpg',
+                'image' => '128.jpg',
                 'collections' => [
                     'Еда', 'Цвета'
                 ],
             ],
             [
                 'text' => 'прозрачный стакан',
-                'image' => '/storage/images/29.jpg',
+                'image' => '29.jpg',
                 'collections' => [
                     'Посуда', 'Цвета'
                 ],
@@ -234,19 +239,12 @@ class PhrasesSeeder extends Seeder
 
             $phraseCreated = new Phrase();
             $phraseCreated->text = $phraseData['text'];
-            $phraseCreated->image = $phraseData['image'];
+            $phraseCreated->image = $this->storeImage($phraseData['image']);
 //            $phraseCreated->audio = $phraseData['audio'];
             $phraseCreated->save();
 
             $tag = Tag::find($faker->numberBetween(1, $tagsCount));
             $phraseCreated->tags()->save($tag);
-
-//            $collection = Collection::inRandomOrder()->first();
-//            $phraseCreated->collections()->save($collection);
-
-//            $phraseCollectionIds = PhraseCollection::inRandomOrder()->take(3)->pluck('id');
-
-//            $phraseCreated->phraseCollections()->attach($phraseCollectionIds, ['order' => ($index + 1)]);
 
             if (array_key_exists('collections', $phraseData)) {
                 foreach ($phraseData['collections'] as $collectionData) {
@@ -263,5 +261,25 @@ class PhrasesSeeder extends Seeder
             $i++;
         }
 
+    }
+
+
+    /**
+     * @throws FileNotFoundException
+     * @throws Throwable
+     */
+    private function storeImage(string $relativePath): string
+    {
+        $filePath = Storage::disk('seeder')->path('images/' . $relativePath);
+
+        throw_if(!File::exists($filePath),
+            new Exception('Файл ' . $relativePath . ' не найден'));
+
+        $fileExt = File::extension($filePath);
+        $fileName = File::name($filePath);
+        $file = File::get($filePath);
+        $newName = md5($fileName . microtime()) . '.' . $fileExt;
+        Storage::disk('images')->put($newName, $file);
+        return $newName;
     }
 }

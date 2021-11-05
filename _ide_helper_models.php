@@ -48,6 +48,8 @@ namespace App\Models{
  * @property string $image
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\PhraseCollection[] $phraseCollections
+ * @property-read int|null $phrase_collections_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Tag[] $tags
  * @property-read int|null $tags_count
  * @method static \Database\Factories\PhraseFactory factory(...$parameters)
@@ -78,6 +80,60 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|PhraseCategory whereUpdatedAt($value)
  */
 	class PhraseCategory extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\PhraseCollection
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $slug
+ * @property string|null $image
+ * @property int|null $user_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Phrase[] $phrases
+ * @property-read int|null $phrases_count
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection query()
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PhraseCollection whereUserId($value)
+ */
+	class PhraseCollection extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\Profile
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $slug
+ * @property int $score
+ * @property int $user_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\User $user
+ * @method static \Database\Factories\ProfileFactory factory(...$parameters)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereScore($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereUserId($value)
+ */
+	class Profile extends \Eloquent {}
 }
 
 namespace App\Models{
@@ -121,6 +177,8 @@ namespace App\Models{
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  * @property-read int|null $notifications_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Profile[] $profiles
+ * @property-read int|null $profiles_count
  * @method static \Database\Factories\UserFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
