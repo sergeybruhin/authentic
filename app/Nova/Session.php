@@ -2,17 +2,18 @@
 
 namespace App\Nova;
 
+use App\Nova\Traits\ReadOnlyResourceTrait;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Session extends Resource
 {
+    use ReadOnlyResourceTrait;
+
     /**
      * The model the resource corresponds to.
      *

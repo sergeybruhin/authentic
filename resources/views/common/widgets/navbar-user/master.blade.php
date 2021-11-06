@@ -1,9 +1,9 @@
-@if(!isset($authUser) && !\Illuminate\Support\Facades\Route::currentRouteNamed('login'))
+@if (!isset($authUser) && !\Illuminate\Support\Facades\Route::currentRouteNamed('login'))
     <a href="{{ route('admin.home') }}" class="nav-link text-dark"><i
             class="fas fa-sign-in-alt me-2"></i> Войти</a>
 @endif
 
-@if(isset($authUser))
+@if (isset($authUser))
     <div class="dropdown text-end">
         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
            data-bs-toggle="dropdown" aria-expanded="false">
@@ -22,9 +22,9 @@
             <li>
                 <hr class="dropdown-divider">
             </li>
-            @forelse($authUser->profiles as $profile)
+            @forelse ($authUser->profiles as $profile)
                 <li>
-                    @if(Request::is('admin/*') || Request::is('admin'))
+                    @if (Request::is('admin/*') || Request::is('admin'))
                         <a class="dropdown-item"
                            href="{{ route('admin.profiles.show', $profile->id) }}">{{ $profile->name }}</a>
                     @else
