@@ -3,26 +3,25 @@
 namespace App\View\Composers;
 
 use App\Models\Profile;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
-class NavbarProfileComposer
+class NavbarUserComposer
 {
-
     /**
-     * @var Profile|null
+     * @var User|null
      */
-    protected ?Profile $selectedProfile = null;
+    protected ?User $authUser = null;
+
 
     /**
      * NavbarComposer constructor.
      */
     public function __construct(Request $request)
     {
-        if ($request->session()->has('profile_id')) {
-            $this->selectedProfile = Profile::find($request->session()->get('profile_id'));
-        }
-
+        $this->authUser = Auth::check() ? Auth::user() : null;
     }
 
     /**
@@ -30,6 +29,6 @@ class NavbarProfileComposer
      */
     public function compose(View $view)
     {
-        $view->with('selectedProfile', $this->selectedProfile);
+        $view->with('authUser', $this->authUser);
     }
 }

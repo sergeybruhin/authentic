@@ -32,6 +32,7 @@
             Фразы</a>
 
         @include('common.widgets.navbar-profile.master')
+        @include('common.widgets.navbar-user.master')
 
 
         {{--        <a href="#" style="text-decoration: none;color: #646100d4" class="e-fullscreenToggle" id="fullscreenToggle"><i--}}

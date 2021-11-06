@@ -13,7 +13,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/" class="nav-link px-2 link-dark" style="font-weight: bold!important;">На сайт</a></li>
         </ul>
-        @include('common.widgets.navbar-profile.master')
+        @include('common.widgets.navbar-user.master')
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                 aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

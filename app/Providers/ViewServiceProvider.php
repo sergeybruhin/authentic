@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\View\Composers\NavbarComposer;
 use App\View\Composers\NavbarProfileComposer;
+use App\View\Composers\NavbarUserComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,5 +27,6 @@ class ViewServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer('common.widgets.navbar-profile.master', NavbarProfileComposer::class);
+        View::composer('common.widgets.navbar-user.master', NavbarUserComposer::class);
     }
 }
