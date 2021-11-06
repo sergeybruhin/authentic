@@ -17,7 +17,7 @@ class CreateWordWordCollectionTable extends Migration
             $table->id();
             $table->foreignId('word_id')->constrained();
             $table->foreignId('word_collection_id')->constrained();
-            $table->integer('order')->default(0);
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

@@ -23,7 +23,11 @@ class Word extends Model
     {
         return $this->belongsToMany(
             WordCollection::class,
-        );
+            'word_word_collection',
+            'word_id',
+            'word_collection_id',
+        )->using(WordCollectionPivot::class)
+            ->withPivot('sort_order');
     }
 
 //    public function getNextAttribute()

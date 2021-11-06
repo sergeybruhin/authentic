@@ -7,10 +7,14 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
+use OptimistDigital\NovaSortable\Traits\HasSortableManyToManyRows;
 
 class Word extends Resource
 {
+    use HasSortableManyToManyRows;
+
     /**
      * @var string
      */
@@ -44,16 +48,16 @@ class Word extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'text',
     ];
 
     /**
      * Get the fields displayed by the resource.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param Request $request
      * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make(__('ID'), 'id')
@@ -69,6 +73,10 @@ class Word extends Resource
                 ->nullable(),
 
             BelongsToMany::make('Коллекции', 'wordCollections', WordColleсtion::class),
+
+            Number::make('Порядок', 'sort_order')->displayUsing(function ($field, $resource) {
+                return $resource->sort_order;
+            }),
 
         ];
     }

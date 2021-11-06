@@ -60,7 +60,7 @@ class WordColleсtion extends Resource
             Text::make('Название', 'name'),
             Text::make('Алиас', 'slug'),
 
-            BelongsToMany::make('Слова', 'words', Word::class),
+            BelongsToMany::make('Слова', 'words', Word::class)->searchable(),
 
         ];
     }

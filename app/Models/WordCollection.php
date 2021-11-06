@@ -17,7 +17,10 @@ class WordCollection extends Model
     {
         return $this->belongsToMany(
             Word::class,
-        )->withPivot('order')
-            ->orderByPivot('order');
+            'word_word_collection',
+            'word_collection_id',
+            'word_id',
+        )->using(WordCollectionPivot::class)
+            ->withPivot('sort_order');
     }
 }
