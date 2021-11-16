@@ -138,6 +138,20 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * App\Models\Session
+ *
+ * @property-read \Carbon\Carbon $last_activity_at
+ * @property-read array $unserialized_payload
+ * @property-read \App\Models\User $user
+ * @method static \Illuminate\Database\Eloquent\Builder|Session newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Session newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Session query()
+ */
+	class Session extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * App\Models\Tag
  *
  * @property int $id
@@ -268,5 +282,29 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollection whereUserId($value)
  */
 	class WordCollection extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\WordCollectionPivot
+ *
+ * @property int $id
+ * @property int $word_id
+ * @property int $word_collection_id
+ * @property int $order
+ * @property string|null $created_at
+ * @property string|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot ordered(string $direction = 'asc')
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot query()
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereOrder($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereWordCollectionId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereWordId($value)
+ */
+	class WordCollectionPivot extends \Eloquent implements \Spatie\EloquentSortable\Sortable {}
 }
 

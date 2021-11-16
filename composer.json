@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+        "ext-json": "*",
         "davidpiesse/nova-audio": "^0.0.3",
         "fakerphp/faker": "^1.9.1",
         "fideloper/proxy": "^4.4",
@@ -19,9 +20,18 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "optimistdigital/nova-sortable": "^2.4",
-        "vlucas/phpdotenv": "^5.3"
+        "vlucas/phpdotenv": "^5.3",
+        "spatie/laravel-backup": "^7.7",
+        "optimistdigital/nova-settings": "^3.2",
+        "kabbouchi/nova-logs-tool": "^0.4.0",
+        "ebess/advanced-nova-media-library": "^3.6",
+        "davidpiesse/nova-phpinfo": "^0.0.2",
+        "chris-ware/nova-breadcrumbs": "^2.3",
+        "browner12/helpers": "^3.3",
+        "bbs-lab/nova-toast-ui-editor-field": "^0.1.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
         "barryvdh/laravel-ide-helper": "^2.10",
         "facade/ignition": "^2.5",
         "laravel/sail": "^1.0.1",
