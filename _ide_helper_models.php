@@ -41,6 +41,34 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * App\Models\GameSession
+ *
+ * @property int $id
+ * @property string $started_at
+ * @property string $ended_at
+ * @property int|null $profile_id
+ * @property int $points
+ * @property int $is_finished
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\Profile|null $profile
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession query()
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereEndedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereIsFinished($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession wherePoints($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereProfileId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereStartedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|GameSession whereUpdatedAt($value)
+ */
+	class GameSession extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * App\Models\Phrase
  *
  * @property int $id
@@ -140,12 +168,24 @@ namespace App\Models{
 /**
  * App\Models\Session
  *
+ * @property string $id
+ * @property int|null $user_id
+ * @property string|null $ip_address
+ * @property string|null $user_agent
+ * @property string $payload
+ * @property \Illuminate\Support\Carbon $last_activity
  * @property-read \Carbon\Carbon $last_activity_at
  * @property-read array $unserialized_payload
- * @property-read \App\Models\User $user
+ * @property-read \App\Models\User|null $user
  * @method static \Illuminate\Database\Eloquent\Builder|Session newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Session newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Session query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Session whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Session whereIpAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Session whereLastActivity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Session wherePayload($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Session whereUserAgent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Session whereUserId($value)
  */
 	class Session extends \Eloquent {}
 }
@@ -291,7 +331,7 @@ namespace App\Models{
  * @property int $id
  * @property int $word_id
  * @property int $word_collection_id
- * @property int $order
+ * @property int $sort_order
  * @property string|null $created_at
  * @property string|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot newModelQuery()
@@ -300,7 +340,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot query()
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereOrder($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereSortOrder($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereWordCollectionId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|WordCollectionPivot whereWordId($value)

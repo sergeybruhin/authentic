@@ -16,7 +16,7 @@ class CreateGameSessionsTable extends Migration
         Schema::create('game_sessions', function (Blueprint $table) {
             $table->id();
             $table->dateTime('started_at');
-            $table->dateTime('ended_at');
+            $table->dateTime('ended_at')->nullable();
             $table->foreignId('profile_id')->nullable()->constrained();
             $table->integer('points')->default(0);
             $table->boolean('is_finished')->default(0);
