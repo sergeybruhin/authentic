@@ -59,6 +59,7 @@ class WordCollectionController extends Controller
         $nextWord = null;
 
         if ($word) {
+
             // get previous user id
 
             $previousId = $wordCollection->words()
@@ -82,7 +83,10 @@ class WordCollectionController extends Controller
 //            dd($previousWord->first());
 
             // get next user id
-            $nextId = $wordCollection->words()->wherePivot('order', '>', $word->pivot->order)->min('order');
+            $nextId = $wordCollection->words()
+                ->wherePivot('sort_order', '>', $word->pivot->sort_order)
+                ->min('sort_order');
+            dd($wordCollection->words->toArray());
             $nextWord = $wordCollection->words()->find($nextId);
         }
 

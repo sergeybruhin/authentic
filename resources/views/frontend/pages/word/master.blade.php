@@ -28,6 +28,7 @@
                 @endif
             </div>
             <div class="col text-end">
+                {{ dd($nextWord) }}
                 @if($nextWord)
                     @if(isset($wordCollection))
                         <a id="nextButton" class="btn btn-primary btn-lg text-uppercase px-4"
