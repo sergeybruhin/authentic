@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4f0084854b8e5b11cbc8e5c1084f9b0",
+    "content-hash": "5627c7a268a4f1a7070e2038f0f9b63c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1158,23 +1158,23 @@
         },
         {
             "name": "ebess/advanced-nova-media-library",
-            "version": "3.6.2",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ebess/advanced-nova-media-library.git",
-                "reference": "939163dbd4d3a8e0ab41200c813d10ee589f86c3"
+                "reference": "7c32be7de5c62274c600e4aa0c6f4788424717f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ebess/advanced-nova-media-library/zipball/939163dbd4d3a8e0ab41200c813d10ee589f86c3",
-                "reference": "939163dbd4d3a8e0ab41200c813d10ee589f86c3",
+                "url": "https://api.github.com/repos/ebess/advanced-nova-media-library/zipball/7c32be7de5c62274c600e4aa0c6f4788424717f1",
+                "reference": "7c32be7de5c62274c600e4aa0c6f4788424717f1",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^5.6|^6.0|^7.0|^8.0",
+                "laravel/framework": "^5.6|^6.0|^7.0|^8.0|^9.0",
                 "laravel/nova": "^2.0|^3.0",
                 "php": ">=7.4",
-                "spatie/laravel-medialibrary": "^8.0|^9.0"
+                "spatie/laravel-medialibrary": "^8.0|^9.0|^10.0"
             },
             "type": "library",
             "extra": {
@@ -1200,9 +1200,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ebess/advanced-nova-media-library/issues",
-                "source": "https://github.com/ebess/advanced-nova-media-library/tree/3.6.2"
+                "source": "https://github.com/ebess/advanced-nova-media-library/tree/3.7.1"
             },
-            "time": "2021-05-09T09:37:51+00:00"
+            "time": "2022-02-17T23:37:09+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5168,16 +5168,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "9.8.3",
+            "version": "9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "687e769a7ba17e49d183947fe058e357ed3c615f"
+                "reference": "71ce715b5be60fe73bbcd6b8dba23ac9b78c9b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/687e769a7ba17e49d183947fe058e357ed3c615f",
-                "reference": "687e769a7ba17e49d183947fe058e357ed3c615f",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/71ce715b5be60fe73bbcd6b8dba23ac9b78c9b62",
+                "reference": "71ce715b5be60fe73bbcd6b8dba23ac9b78c9b62",
                 "shasum": ""
             },
             "require": {
@@ -5257,7 +5257,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/9.8.3"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/9.9.0"
             },
             "funding": [
                 {
@@ -5269,7 +5269,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-18T22:57:53+00:00"
+            "time": "2021-11-17T09:36:26+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -11780,5 +11780,5 @@
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

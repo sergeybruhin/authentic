@@ -239,7 +239,12 @@ class PhrasesSeeder extends Seeder
 
             $phraseCreated = new Phrase();
             $phraseCreated->text = $phraseData['text'];
-            $phraseCreated->image = $this->storeImage($phraseData['image']);
+
+//            $phraseCreated->image = $this->storeImage($phraseData['image']);
+            $filePath = Storage::disk('seeder')->path('images/' . $phraseData['image']);
+            $phraseCreated->addMedia($filePath)
+                ->toMediaCollection('image');
+
 //            $phraseCreated->audio = $phraseData['audio'];
             $phraseCreated->save();
 
@@ -272,6 +277,7 @@ class PhrasesSeeder extends Seeder
     {
         $filePath = Storage::disk('seeder')->path('images/' . $relativePath);
 
+
         throw_if(!File::exists($filePath),
             new Exception('Файл ' . $relativePath . ' не найден'));
 
@@ -280,6 +286,7 @@ class PhrasesSeeder extends Seeder
         $file = File::get($filePath);
         $newName = md5($fileName . microtime()) . '.' . $fileExt;
         Storage::disk('images')->put($newName, $file);
+
         return $newName;
     }
 }

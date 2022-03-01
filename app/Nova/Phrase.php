@@ -2,7 +2,9 @@
 
 namespace App\Nova;
 
+use App\Models\Phrase as PhraseModel;
 use Davidpiesse\Audio\Audio;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
@@ -30,7 +32,7 @@ class Phrase extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Phrase::class;
+    public static string $model = PhraseModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -62,8 +64,16 @@ class Phrase extends Resource
 
             Text::make('Текст', 'text'),
 
-            Image::make('Изображение', 'image')
-                ->disk('images'),
+//            Image::make('Изображение', 'image')
+//                ->disk('images'),
+
+            Images::make('Обложка', 'cover') // second parameter is the media collection name
+            ->croppingConfigs(['ratio' => 4 / 3])
+                ->mustCrop()
+                ->showStatistics()
+                ->conversionOnIndexView('thumb') // conversion used to display the image
+                ->rules('required')
+                ->singleMediaRules(['mimes:jpg']), // validation rules
 
             Audio::make('Audio', 'audio')
                 ->disk('audio')

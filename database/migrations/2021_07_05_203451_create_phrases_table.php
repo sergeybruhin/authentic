@@ -16,7 +16,7 @@ class CreatePhrasesTable extends Migration
         Schema::create('phrases', function (Blueprint $table) {
             $table->id();
             $table->string('text');
-            $table->string('image');
+//            $table->string('image');
             $table->timestamps();
         });
     }
