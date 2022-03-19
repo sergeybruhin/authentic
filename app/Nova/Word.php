@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Davidpiesse\Audio\Audio;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
@@ -65,8 +66,16 @@ class Word extends Resource
 
             Text::make('Текст', 'text'),
 
-            Image::make('Изображение', 'image')
-                ->disk('images'),
+//            Image::make('Изображение', 'image')
+//                ->disk('images'),
+
+            Images::make('Изображение', 'image') // second parameter is the media collection name
+            ->croppingConfigs(['ratio' => 4 / 3])
+                ->mustCrop()
+                ->showStatistics()
+                ->conversionOnIndexView('md') // conversion used to display the image
+                ->rules('required')
+                ->singleMediaRules(['mimes:jpg']), // validation rules
 
             Audio::make('Audio', 'audio')
                 ->disk('audio')
@@ -74,9 +83,9 @@ class Word extends Resource
 
             BelongsToMany::make('Коллекции', 'wordCollections', WordColleсtion::class),
 
-            Number::make('Порядок', 'sort_order')->displayUsing(function ($field, $resource) {
-                return $resource->sort_order;
-            }),
+//            Number::make('Порядок', 'sort_order')->displayUsing(function ($field, $resource) {
+//                return $resource->sort_order;
+//            }),
 
         ];
     }

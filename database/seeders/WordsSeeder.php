@@ -1270,9 +1270,18 @@ class WordsSeeder extends Seeder
             $wordCreated = new Word;
             $wordCreated->text = $wordData['text'];
 
-            $wordCreated->image = $this->storeImage($wordData['image']);
+
+            $srcPath = Storage::disk('seeder')->path('images/' . $wordData['image']);
+
+            if (File::exists($srcPath)) {
+                $wordCreated->addMediaFromDisk('/images/' . $wordData['image'], 'seeder')
+                    ->preservingOriginal()
+                    ->toMediaCollection('image');
+            }
+
             $wordCreated->audio = $wordData['audio'];
             $wordCreated->save();
+
 
             $tag = Tag::find($faker->numberBetween(1, $tagsCount));
             $wordCreated->tags()->save($tag);

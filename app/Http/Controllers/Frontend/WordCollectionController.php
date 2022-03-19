@@ -20,10 +20,11 @@ class WordCollectionController extends Controller
      */
     public function index(): View
     {
-        $wordCollections = WordCollection::with('words')
+        $wordCollections = WordCollection::with('words','words.media')
             ->withCount('words')
             ->orderByDesc('words_count')
             ->paginate(30);
+
         return view('frontend.pages.word-collections.master')
             ->with(compact('wordCollections'));
     }
@@ -34,7 +35,8 @@ class WordCollectionController extends Controller
      */
     public function show($id): View
     {
-        $wordCollection = WordCollection::findOrFail($id);
+        $wordCollection = WordCollection::with('words','words.media')
+        ->findOrFail($id);
 
         return view('frontend.pages.word-collection.master')
             ->with(compact('wordCollection'));

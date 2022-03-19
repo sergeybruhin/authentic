@@ -16,7 +16,7 @@ class CreateWordsTable extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->id();
             $table->string('text');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('audio')->nullable();
             $table->timestamps();
         });

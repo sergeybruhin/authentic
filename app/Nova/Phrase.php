@@ -67,7 +67,7 @@ class Phrase extends Resource
 //            Image::make('Изображение', 'image')
 //                ->disk('images'),
 
-            Images::make('Обложка', 'cover') // second parameter is the media collection name
+            Images::make('Обложка', 'image') // second parameter is the media collection name
             ->croppingConfigs(['ratio' => 4 / 3])
                 ->mustCrop()
                 ->showStatistics()

@@ -240,10 +240,13 @@ class PhrasesSeeder extends Seeder
             $phraseCreated = new Phrase();
             $phraseCreated->text = $phraseData['text'];
 
-//            $phraseCreated->image = $this->storeImage($phraseData['image']);
-            $filePath = Storage::disk('seeder')->path('images/' . $phraseData['image']);
-            $phraseCreated->addMedia($filePath)
-                ->toMediaCollection('image');
+            $srcPath = Storage::disk('seeder')->path('images/' . $phraseData['image']);
+
+            if (File::exists($srcPath)) {
+                $phraseCreated->addMediaFromDisk('/images/' . $phraseData['image'], 'seeder')
+                    ->preservingOriginal()
+                    ->toMediaCollection('image');
+            }
 
 //            $phraseCreated->audio = $phraseData['audio'];
             $phraseCreated->save();
