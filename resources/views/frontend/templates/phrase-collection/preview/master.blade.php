@@ -8,8 +8,10 @@
 <a href="{{ route('phraseCollections.show', $phraseCollection->id) }}" class="t-phraseCollectionPreview">
     <div class="t-phraseCollectionPreview__container">
         @forelse($phraseCollection->phrases->take(4) as $phrase)
-            <img src="{{ Storage::disk('images')->url($phrase->image)}}" class="t-phraseCollectionPreview__image"
-                 alt="{{ Str::upper($phraseCollection->name) }}">
+            @if($phrase->getFirstMedia('image'))
+                <img src="{{ $phrase->getFirstMedia('image')->getUrl('sm')}}" class="t-phraseCollectionPreview__image"
+                     alt="{{ Str::upper($phraseCollection->name) }}">
+            @endif
         @empty
         @endforelse
     </div>

@@ -16,7 +16,7 @@ class PhraseCollectionController extends Controller
      */
     public function index(): View
     {
-        $phraseCollections = PhraseCollection::with('phrases')
+        $phraseCollections = PhraseCollection::with('phrases', 'phrases.media')
             ->withCount('phrases')
             ->orderByDesc('phrases_count')
             ->paginate(30);
@@ -30,7 +30,8 @@ class PhraseCollectionController extends Controller
      */
     public function show($id): View
     {
-        $phraseCollection = PhraseCollection::findOrFail($id);
+        $phraseCollection = PhraseCollection::with('phrases', 'phrases.media')
+            ->findOrFail($id);
 
         return view('frontend.pages.phrase-collection.master')
             ->with(compact('phraseCollection'));

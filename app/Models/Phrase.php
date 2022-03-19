@@ -32,7 +32,12 @@ class Phrase extends Model implements HasMedia
      */
     public function registerMediaConversions(Media $media = null): void
     {
-        $this->addMediaConversion('thumb')
+        $this->addMediaConversion('sm')
+            ->width(200)
+            ->height(150)
+            ->performOnCollections('image');
+
+        $this->addMediaConversion('md')
             ->width(400)
             ->height(300)
             ->performOnCollections('image');
