@@ -1,3 +1,4 @@
+@section('styles')
 <style>
     .editor {
         background-color: white;
@@ -21,6 +22,7 @@
     }
 
 </style>
+@endsection
 
 <div class="editor" id="editor" contenteditable="true">
 

@@ -48,23 +48,25 @@
 </head>
 <body>
 <div id="app">
-    @include('frontend.widgets.navbar.master')
-
-    @yield('header')
     <hello-world></hello-world>
-    @yield('content')
-
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                    href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
-        </div>
-    </footer>
 </div>
+@include('frontend.widgets.navbar.master')
+
+@yield('header')
+
+@yield('content')
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+</footer>
+
 @yield('scripts')
 <script>
     /* Get the documentElement (<html>) to display the page in fullscreen */
@@ -73,10 +75,10 @@
     const fullscreenToggle = document.getElementById('fullscreenToggle');
 
 
-    fullscreenToggle.addEventListener('click', function (e) {
-        e.preventDefault();
-        toggleFullscreen(e.currentTarget);
-    }, false);
+    // fullscreenToggle.addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     toggleFullscreen(e.currentTarget);
+    // }, false);
 
     function toggleFullscreen(toggle) {
         if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
