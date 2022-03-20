@@ -11,6 +11,9 @@
             </div>
             <div class="row">
                 <div class="col">
+                    @if($profile->getFirstMedia('avatar'))
+                        <img class="rounded-circle" src="{{ $profile->getFirstMedia('avatar')->getUrl('md') }}" alt="">
+                    @endif
                     <h1>{{ $profile->name }}</h1>
                 </div>
             </div>

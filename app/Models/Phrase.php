@@ -41,6 +41,13 @@ class Phrase extends Model implements HasMedia
             ->width(400)
             ->height(300)
             ->performOnCollections('image');
+
+        $this->addMediaConversion('lg')
+            ->width(800)
+            ->height(600)
+            ->performOnCollections('image');
+
+
     }
 
 

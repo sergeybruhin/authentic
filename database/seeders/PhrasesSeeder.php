@@ -261,7 +261,11 @@ class PhrasesSeeder extends Seeder
                             'slug' => Str::slug($collectionData)
                         ]
                     );
-                    $phraseCreated->phraseCollections()->attach($selectedCollection->id, ['order' => ($index + 1)]);
+                    $phraseCreated->phraseCollections()
+                        ->attach(
+                            $selectedCollection->id,
+                            ['order' => ($index + 1)]
+                        );
                 }
             }
 

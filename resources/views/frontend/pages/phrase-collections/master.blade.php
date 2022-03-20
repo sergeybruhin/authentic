@@ -33,7 +33,7 @@
         </div>
         <div class="container">
             <div class="row align-items-center my-4">
-                <div class="col ">
+                <div class="col text-center d-flex justify-content-center">
                     {{ $phraseCollections->links() }}
                 </div>
             </div>

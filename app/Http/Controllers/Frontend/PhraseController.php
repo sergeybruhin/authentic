@@ -40,9 +40,6 @@ class PhraseController extends Controller
             $nextPhrase = Phrase::find($nextId);
         }
 
-
-//        dd($previousPhrase->toArray(), $nextPhrase->toArray());
-
         return view('frontend.pages.phrase.master')
             ->with(compact('phrase'))
             ->with(compact('nextPhrase'))

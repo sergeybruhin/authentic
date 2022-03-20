@@ -3,10 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Collection;
-use App\Models\Phrase;
 use App\Models\PhraseCollection;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\View\View;
 
 class PhraseCollectionController extends Controller
@@ -46,28 +43,12 @@ class PhraseCollectionController extends Controller
         $nextPhrase = null;
 
         if ($phrase) {
-            // get previous user id
             $previousId = $phraseCollection->phrases()->wherePivot('order', '<', $phrase->pivot->order)->max('order');
-//            $previousPhrase = $collection->phrases()->find($previousId);
-//            $previousId = $collection->phrases()->first();
-//            dd($previousId);
             $previousPhrase = $phraseCollection->phrases()->find($previousId);
-//            $previousPhrase = Phrase::whereHas('phraseCollections', function (Builder $query) use ($collectionId) {
-//                return $query->where('id', $collectionId);
-//            })->first();
-//            $previousPhrase = Phrase::where('phrase-collections.id', $collectionId );
-//            $previousPhrase = Phrase::whereHas('phraseCollections', function($query) use ($collectionId) {
-//               $query->where('id', $collectionId);
-//            });
 
-//            dd($previousPhrase->first());
-
-            // get next user id
             $nextId = $phraseCollection->phrases()->wherePivot('order', '>', $phrase->pivot->order)->min('order');
             $nextPhrase = $phraseCollection->phrases()->find($nextId);
         }
-
-        //        dd($previousPhrase->toArray(), $nextPhrase->toArray());
 
         return view('frontend.pages.phrase.master')
             ->with(compact('phraseCollection'))

@@ -19,8 +19,6 @@ class Word extends Model implements HasMedia
     use Collectionable;
     use InteractsWithMedia;
 
-//    protected $appends = ['next', 'previous'];
-
     /**
      * @return BelongsToMany
      */
@@ -28,22 +26,8 @@ class Word extends Model implements HasMedia
     {
         return $this->belongsToMany(
             WordCollection::class,
-            'word_word_collection',
-            'word_id',
-            'word_collection_id',
-        )->using(WordCollectionPivot::class)
-            ->withPivot('sort_order');
+        );
     }
-
-//    public function getNextAttribute()
-//    {
-//        return $this->where('id', '>', $this->id)->orderBy('id', 'asc')->first();
-//    }
-//
-//    public function getPreviousAttribute()
-//    {
-//        return $this->where('id', '<', $this->id)->orderBy('id', 'asc')->first();
-//    }
 
     /**
      * @throws InvalidManipulation
@@ -58,6 +42,11 @@ class Word extends Model implements HasMedia
         $this->addMediaConversion('md')
             ->width(400)
             ->height(300)
+            ->performOnCollections('image');
+
+        $this->addMediaConversion('lg')
+            ->width(800)
+            ->height(600)
             ->performOnCollections('image');
     }
 

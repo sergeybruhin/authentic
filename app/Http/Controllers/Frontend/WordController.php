@@ -40,9 +40,6 @@ class WordController extends Controller
             $nextWord = Word::find($nextId);
         }
 
-
-//        dd($previousWord->toArray(), $nextWord->toArray());
-
         return view('frontend.pages.word.master')
             ->with(compact('word'))
             ->with(compact('nextWord'))

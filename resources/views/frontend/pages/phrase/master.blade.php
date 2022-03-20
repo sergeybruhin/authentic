@@ -11,7 +11,10 @@
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
                     <div class="" style="max-height: 78vh;height: 100%">
-                        <img class="img-fluid" src="{{ Storage::disk('images')->url($phrase->image) }}" alt="" style="max-height: 78vh">
+                        @if($phrase->getFirstMedia('image'))
+                            <img class="img-fluid" src="{{ $phrase->getFirstMedia('image')->getUrl('lg')}}" alt=""
+                                 style="max-height: 78vh">
+                        @endif
                         <h4 class="text-center my-3">{{ Str::upper($phrase->text) }}</h4>
                     </div>
 

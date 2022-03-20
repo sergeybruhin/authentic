@@ -1293,7 +1293,11 @@ class WordsSeeder extends Seeder
                             'slug' => Str::slug($collectionData),
                         ]
                     );
-                    $wordCreated->wordCollections()->attach($selectedCollection->id);
+                    $wordCreated->wordCollections()
+                        ->attach(
+                            $selectedCollection->id,
+                            ['order' => ($index + 1)]
+                        );
                 }
             }
 

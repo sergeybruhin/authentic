@@ -10,6 +10,7 @@ class WordCollection extends Model
 {
     use HasFactory;
 
+
     /**
      * @return BelongsToMany
      */
@@ -17,10 +18,7 @@ class WordCollection extends Model
     {
         return $this->belongsToMany(
             Word::class,
-            'word_word_collection',
-            'word_collection_id',
-            'word_id',
-        )->using(WordCollectionPivot::class)
-            ->withPivot('sort_order');
+        )->withPivot('order')
+            ->orderByPivot('order');
     }
 }

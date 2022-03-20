@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
@@ -46,6 +47,13 @@ class Profile extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             BelongsToMany::make('Пользователь', 'user', User::class),
+            Images::make('Аватар', 'avatar') // second parameter is the media collection name
+            ->croppingConfigs(['ratio' => 1 / 1])
+                ->mustCrop()
+                ->showStatistics()
+                ->conversionOnIndexView('md') // conversion used to display the image
+                ->rules('required')
+                ->singleMediaRules(['mimes:jpg']), // validation rules
             Text::make('Имя', 'name')->sortable(),
             Text::make('Алиас', 'slug')->sortable(),
             Number::make('Баллы', 'score')->sortable(),
