@@ -66,9 +66,6 @@ class Word extends Resource
 
             Text::make('Текст', 'text'),
 
-//            Image::make('Изображение', 'image')
-//                ->disk('images'),
-
             Images::make('Изображение', 'image') // second parameter is the media collection name
             ->croppingConfigs(['ratio' => 4 / 3])
                 ->mustCrop()
@@ -81,7 +78,7 @@ class Word extends Resource
                 ->disk('audio')
                 ->nullable(),
 
-            BelongsToMany::make('Коллекции', 'wordCollections', WordColleсtion::class),
+            BelongsToMany::make('Коллекции', 'wordCollections', WordCollection::class),
 
 //            Number::make('Порядок', 'sort_order')->displayUsing(function ($field, $resource) {
 //                return $resource->sort_order;

@@ -8,7 +8,6 @@ use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
 class GameSession extends Resource
 {
@@ -18,6 +17,14 @@ class GameSession extends Resource
      * @var string
      */
     public static string $model = GameSessionModel::class;
+
+    /**
+     * @return string
+     */
+    public static function label(): string
+    {
+        return 'Сессии';
+    }
 
     /**
      * The single value that should be used to represent the resource when being displayed.

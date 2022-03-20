@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\Profile as ProfileModel;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
@@ -17,7 +18,16 @@ class Profile extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Profile::class;
+    public static string $model = ProfileModel::class;
+
+
+    /**
+     * @return string
+     */
+    public static function label(): string
+    {
+        return 'Профили';
+    }
 
     /**
      * The single value that should be used to represent the resource when being displayed.

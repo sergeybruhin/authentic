@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\Session as SessionModel;
 use App\Nova\Traits\ReadOnlyResourceTrait;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
@@ -19,7 +20,7 @@ class Session extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Session::class;
+    public static string $model = SessionModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

@@ -8,7 +8,6 @@ use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 
 class Phrase extends Resource
@@ -64,14 +63,11 @@ class Phrase extends Resource
 
             Text::make('Текст', 'text'),
 
-//            Image::make('Изображение', 'image')
-//                ->disk('images'),
-
             Images::make('Обложка', 'image') // second parameter is the media collection name
             ->croppingConfigs(['ratio' => 4 / 3])
                 ->mustCrop()
                 ->showStatistics()
-                ->conversionOnIndexView('thumb') // conversion used to display the image
+                ->conversionOnIndexView('md') // conversion used to display the image
                 ->rules('required')
                 ->singleMediaRules(['mimes:jpg']), // validation rules
 

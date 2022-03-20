@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\User as UserModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\HasMany;
@@ -21,7 +22,7 @@ class User extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\User::class;
+    public static string $model = UserModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -42,10 +43,10 @@ class User extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param Request $request
      * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make()->sortable(),

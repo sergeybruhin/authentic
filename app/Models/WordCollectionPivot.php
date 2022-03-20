@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Nova\WordColleсtion;
+use App\Nova\WordCollection;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Spatie\EloquentSortable\Sortable;
@@ -21,7 +21,7 @@ class WordCollectionPivot extends Pivot implements Sortable
     public array $sortable = [
         'order_column_name' => 'sort_order',
         'sort_when_creating' => true,
-        'only_sort_on' => WordColleсtion::class,
+        'only_sort_on' => WordCollection::class,
     ];
 
     /**

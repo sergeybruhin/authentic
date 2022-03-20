@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\PhraseCategory as PhraseCategoryModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -26,7 +27,7 @@ class PhraseCategory extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\PhraseCategory::class;
+    public static string $model = PhraseCategoryModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

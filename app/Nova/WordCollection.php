@@ -2,12 +2,13 @@
 
 namespace App\Nova;
 
+use App\Models\WordCollection as WordCategoryCollectionModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 
-class WordColleсtion extends Resource
+class WordCollection extends Resource
 {
     /**
      * @var string
@@ -27,7 +28,7 @@ class WordColleсtion extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\WordCollection::class;
+    public static string $model = WordCategoryCollectionModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -48,10 +49,10 @@ class WordColleсtion extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param Request $request
      * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make(__('ID'), 'id')

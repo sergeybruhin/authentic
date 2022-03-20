@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\Tag as TagModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -26,7 +27,7 @@ class Tag extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Tag::class;
+    public static string $model = TagModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

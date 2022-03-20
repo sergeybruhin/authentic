@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\PhraseCollection as PhraseCollectionModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
@@ -28,7 +29,7 @@ class PhraseCollection extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\PhraseCollection::class;
+    public static string $model = PhraseCollectionModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
