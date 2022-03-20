@@ -10,7 +10,7 @@ class WordController extends Controller
 {
     public function index(Request $request)
     {
-        $words = Word::all();
+        $words = Word::paginate(10);
         return response()->json(
             $words
         );

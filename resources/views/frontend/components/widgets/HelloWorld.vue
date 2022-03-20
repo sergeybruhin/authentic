@@ -1,10 +1,15 @@
 <template>
-    <div class="my-5">
-        <h1>Hello worlds</h1>
+    <div class="my-1">
+        <h6 class="text-center">Vue application container</h6>
+        <div class="text-center">
+            <span class="badge bg-secondary mr-3" v-for="word in words" :key="word.text">{{ word.text}}</span>
+        </div>
     </div>
 
 </template>
 <script>
+import WordsService from "../../../../js/services/WordsService";
+
 export default {
     name: "HelloWorld",
     setup: () => ({
@@ -12,11 +17,25 @@ export default {
     }),
     data() {
         return {
-            greeting: 'Hello World!'
+            words: [],
         }
     },
     mounted() {
+        this.fetchWords();
         console.log('Hello world mounted');
+    },
+    methods: {
+        fetchWords() {
+            WordsService.getAll()
+                .then(response => {
+                    this.words = response.data.data;
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+            ;
+        }
     }
 }
+
 </script>
