@@ -24,6 +24,11 @@ class User extends Resource
      */
     public static string $model = UserModel::class;
 
+    public static function label()
+    {
+        return "Пользователи";
+    }
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *

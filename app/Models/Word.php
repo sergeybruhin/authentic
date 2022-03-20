@@ -30,6 +30,16 @@ class Word extends Model implements HasMedia
     }
 
     /**
+     * @return BelongsToMany
+     */
+    public function phrases(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            Phrase::class,
+        );
+    }
+
+    /**
      * @throws InvalidManipulation
      */
     public function registerMediaConversions(Media $media = null): void

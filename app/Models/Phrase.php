@@ -28,6 +28,16 @@ class Phrase extends Model implements HasMedia
     }
 
     /**
+     * @return BelongsToMany
+     */
+    public function words(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            Word::class,
+        );
+    }
+
+    /**
      * @throws InvalidManipulation
      */
     public function registerMediaConversions(Media $media = null): void
