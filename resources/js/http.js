@@ -1,6 +1,6 @@
 import axios from "axios";
 export default axios.create({
-    baseURL: "http://authentic.test/api",
+    baseURL: "https:/tinytalk.ru/api",
     headers: {
         "Content-type": "application/json"
     }
