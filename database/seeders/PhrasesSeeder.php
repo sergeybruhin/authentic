@@ -292,7 +292,7 @@ class PhrasesSeeder extends Seeder
         $fileName = File::name($filePath);
         $file = File::get($filePath);
         $newName = md5($fileName . microtime()) . '.' . $fileExt;
-        Storage::disk('images')->put($newName, $file);
+        Storage::disk('images')->copy($newName, $file);
 
         return $newName;
     }
