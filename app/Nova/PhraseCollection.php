@@ -7,6 +7,7 @@ use Benjacho\BelongsToManyField\BelongsToManyField;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Nikans\TextLinked\TextLinked;
 
@@ -72,6 +73,12 @@ class PhraseCollection extends Resource
                 ->hideFromIndex(),
 
             BelongsToManyField::make('Фразы', 'phrases', Phrase::class),
+            BelongsToMany::make('Фразы', 'phrases', Phrase::class)
+                ->fields(function () {
+                    return [
+                        Number::make('Порядок', 'order'),
+                    ];
+                }),
 
         ];
     }
