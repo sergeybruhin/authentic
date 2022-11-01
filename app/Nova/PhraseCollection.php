@@ -3,10 +3,12 @@
 namespace App\Nova;
 
 use App\Models\PhraseCollection as PhraseCollectionModel;
+use Benjacho\BelongsToManyField\BelongsToManyField;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Nikans\TextLinked\TextLinked;
 
 class PhraseCollection extends Resource
 {
@@ -59,10 +61,17 @@ class PhraseCollection extends Resource
             ID::make(__('ID'), 'id')
                 ->sortable(),
 
-            Text::make('Название', 'name'),
-            Text::make('Алиас', 'slug'),
+            TextLinked::make('Название', 'name')
+                ->required()
+                ->rules('required', 'string')
+                ->link($this),
 
-            BelongsToMany::make('Фразы', 'phrases', Phrase::class),
+            Text::make('Алиас', 'slug')
+                ->hideWhenUpdating()
+                ->hideWhenCreating()
+                ->hideFromIndex(),
+
+            BelongsToManyField::make('Фразы', 'phrases', Phrase::class),
 
         ];
     }

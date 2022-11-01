@@ -6,6 +6,7 @@ use App\Models\PhraseCategory as PhraseCategoryModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Nikans\TextLinked\TextLinked;
 
 class PhraseCategory extends Resource
 {
@@ -57,7 +58,10 @@ class PhraseCategory extends Resource
             ID::make(__('ID'), 'id')
                 ->sortable(),
 
-            Text::make('Название', 'name'),
+            TextLinked::make('Название', 'name')
+                ->required()
+                ->rules('required', 'string')
+                ->link($this),
 
         ];
     }

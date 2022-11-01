@@ -3,10 +3,12 @@
 namespace App\Nova;
 
 use App\Models\WordCollection as WordCategoryCollectionModel;
+use Benjacho\BelongsToManyField\BelongsToManyField;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Nikans\TextLinked\TextLinked;
 
 class WordCollection extends Resource
 {
@@ -58,10 +60,17 @@ class WordCollection extends Resource
             ID::make(__('ID'), 'id')
                 ->sortable(),
 
-            Text::make('Название', 'name'),
-            Text::make('Алиас', 'slug'),
+            TextLinked::make('Название', 'name')
+                ->required()
+                ->rules('required', 'string')
+                ->link($this),
 
-            BelongsToMany::make('Слова', 'words', Word::class)->searchable(),
+            Text::make('Алиас', 'slug')
+                ->hideWhenUpdating()
+                ->hideWhenCreating()
+                ->hideFromIndex(),
+
+            BelongsToManyField::make('Слова', 'words', Word::class),
 
         ];
     }

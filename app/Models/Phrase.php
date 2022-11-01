@@ -1,8 +1,9 @@
-<?php
+<?php /** @noinspection PhpArrayShapeAttributeCanBeAddedInspection */
 
 namespace App\Models;
 
 use App\Traits\Morphs\Taggable;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -16,6 +17,18 @@ class Phrase extends Model implements HasMedia
     use HasFactory;
     use Taggable;
     use InteractsWithMedia;
+    use Sluggable;
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'name',
+                'unique' => true,
+                'onUpdate' => true,
+            ],
+        ];
+    }
 
     /**
      * @return BelongsToMany
