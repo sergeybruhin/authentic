@@ -73,7 +73,7 @@ class Phrase extends Resource
                 ->mustCrop()
                 ->showStatistics()
                 ->conversionOnIndexView('md') // conversion used to display the image
-                ->singleMediaRules('required', 'file', 'image', 'mimes:jpg,jpeg', 'dimensions:min_width=320,min_height=320', 'max:8000')
+                ->singleMediaRules('required', 'file', 'image', 'mimes:jpg,jpeg,png', 'dimensions:min_width=320,min_height=320', 'max:8000')
                 ->help('Формат изображения .jpg, размер не должен превышать 8МБ, минимум 320x320px')
                 ->required(),
 
