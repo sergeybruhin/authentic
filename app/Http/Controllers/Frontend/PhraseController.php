@@ -31,14 +31,16 @@ class PhraseController extends Controller
         $nextPhrase = null;
 
         if ($phrase) {
-            // get previous user id
+            // get previous phrase id
             $previousId = Phrase::where('id', '<', $phrase->id)->max('id');
             $previousPhrase = Phrase::find($previousId);
 
-            // get next user id
+            // get next phrase id
             $nextId = Phrase::where('id', '>', $phrase->id)->min('id');
             $nextPhrase = Phrase::find($nextId);
+
         }
+
 
         return view('frontend.pages.phrase.master')
             ->with(compact('phrase'))
