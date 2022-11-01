@@ -48,7 +48,7 @@
 </head>
 <body>
 <div id="app">
-    <hello-world></hello-world>
+{{--    <hello-world></hello-world>--}}
 </div>
 @include('frontend.widgets.navbar.master')
 

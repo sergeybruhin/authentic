@@ -9,3 +9,14 @@
 @import "../views/frontend/widgets/success-modal/master";
 @import "../views/frontend/widgets/navbar/master";
 //@import "../views/common/widgets/navbar-profile/master";
+
+.w-homepageHeader {
+    &__button {
+        &--words {
+
+        }
+        &--phrases {
+
+        }
+    }
+}
