@@ -28,6 +28,11 @@ class Phrase extends Resource
         return 'Фразы';
     }
 
+    public static $tableStyle = 'tight';
+    public static $showColumnBorders = true;
+    public static $perPageViaRelationship = 50;
+    public static $perPageOptions = [50, 100, 200, 300];
+
     /**
      * The model the resource corresponds to.
      *
