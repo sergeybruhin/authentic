@@ -46,13 +46,18 @@ class PhraseCollectionController extends Controller
 
             $previousPhrase = $phraseCollection->phrases()
                 ->where('phrases.id', '!=', $phrase->id)
-                ->wherePivot('order', '<', $phrase->pivot->order)
+                ->wherePivot('order', '<=', $phrase->pivot->order)
+                ->orderBy('id', 'desc')
+                ->orderByPivot('order', 'desc')
                 ->first();
 
             $nextPhrase = $phraseCollection->phrases()
                 ->where('phrases.id', '!=', $phrase->id)
                 ->wherePivot('order', '>=', $phrase->pivot->order)
+                ->orderBy('id')
+//                ->orderByPivot('order')
                 ->first();
+//            dd($nextPhrase);
         }
 
 

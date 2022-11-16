@@ -37,7 +37,8 @@ class Phrase extends Model implements HasMedia
     {
         return $this->belongsToMany(
             PhraseCollection::class,
-        )->withPivot('order');
+        )->using(PhrasePhraseCollectionPivot::class)
+            ->withPivot('order');
     }
 
     /**

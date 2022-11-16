@@ -7,9 +7,7 @@ use Benjacho\BelongsToManyField\BelongsToManyField;
 use Davidpiesse\Audio\Audio;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Text;
 use Nikans\TextLinked\TextLinked;
 
 class Phrase extends Resource
