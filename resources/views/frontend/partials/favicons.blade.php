@@ -4,7 +4,7 @@
 <link rel="manifest" href="/site.webmanifest?v=1">
 <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#ff0000">
 <link rel="shortcut icon" href="/favicon.ico?v=1">
-<meta name="apple-mobile-web-app-title" content="Authentic">
-<meta name="application-name" content="Authentic">
+<meta name="apple-mobile-web-app-title" content="ТиниТолк">
+<meta name="application-name" content="ТиниТолк">
 <meta name="msapplication-TileColor" content="#b91d47">
 <meta name="theme-color" content="#ffffff">
