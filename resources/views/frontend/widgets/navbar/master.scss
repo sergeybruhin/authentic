@@ -1,3 +1,17 @@
+.w-navbar {
+    &__logo {
+        background-image: url("./assets/tinytalk-logo.png");
+        height: 53px;
+        width: 242px;
+        margin-top: -8px;
+
+        &:hover, &:focus, &:active {
+            opacity: 0.7;
+        }
+
+    }
+}
+
 .e-fullscreenToggle {
     &--expanded {
         .fa-expand:before {

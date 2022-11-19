@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale())}}" class="h-full bg-gray-50 js-focus-visible" prefix="og: http://ogp.me/ns#">
+<html lang="{{ str_replace('_', '-', app()->getLocale())}}" class="h-full bg-gray-50 js-focus-visible"
+      prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -17,10 +18,10 @@
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <title>ТиниТолк.ру — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</title>
+    <title>Словечки (TinyTalk.ru) — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</title>
 
     <meta name="description"
-          content="Учимся писать буквы, слова и фразы на тренажёре для печати для детей TinyTalk. Поможем ребёнку со сложностями речи легче воспринимать слова и словосочетания через печать на клавиатуре. ">
+          content="Учимся писать буквы, слова и фразы на тренажёре для печати для детей 'Словечки (TinyTalk.ru)'. Поможем ребёнку со сложностями речи легче воспринимать слова и словосочетания через печать на клавиатуре. ">
 
     <style>
         .bd-placeholder-img {
@@ -59,8 +60,8 @@
         <p class="float-end mb-1">
             <a href="#">Наверх</a>
         </p>
-        <p class="mb-1">ТиниТолк.ру — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</p>
-{{--        <p class="mb-0"></p>--}}
+        <p class="mb-1">Словечки (TinyTalk.ru) — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</p>
+        {{--        <p class="mb-0"></p>--}}
     </div>
 </footer>
 
