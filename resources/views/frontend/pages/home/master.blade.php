@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Учимся писать</h1>
+                    <h1 class="fw-light">Учимся писать буквый и слова</h1>
                     <p class="lead text-muted">Простой и удобный тренажёр печати на комьютере для детей со сложностями
                         восприятия речи</p>
                     <p>

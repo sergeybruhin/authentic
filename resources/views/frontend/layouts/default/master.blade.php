@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale())}}" class="h-full bg-gray-50 js-focus-visible" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -17,7 +17,10 @@
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <title>ТиниТолк.ру — Учим слова и фразы</title>
+    <title>ТиниТолк.ру — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</title>
+
+    <meta name="description"
+          content="Учимся писать буквы, слова и фразы на тренажёре для печати для детей TinyTalk. Поможем ребёнку со сложностями речи легче воспринимать слова и словосочетания через печать на клавиатуре. ">
 
     <style>
         .bd-placeholder-img {
@@ -54,11 +57,10 @@
 <footer class="text-muted py-5">
     <div class="container">
         <p class="float-end mb-1">
-            <a href="#">Back to top</a>
+            <a href="#">Наверх</a>
         </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+        <p class="mb-1">ТиниТолк.ру — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</p>
+{{--        <p class="mb-0"></p>--}}
     </div>
 </footer>
 
