@@ -10,11 +10,14 @@
 @import "../views/frontend/widgets/navbar/master";
 //@import "../views/common/widgets/navbar-profile/master";
 
+@import "../views/frontend/pages/phrase/master";
+
 .w-homepageHeader {
     &__button {
         &--words {
 
         }
+
         &--phrases {
 
         }

@@ -62,6 +62,9 @@
             <audio id="phraseVoiceover" src="{{ $phrase->audio }}" preload="auto"></audio>
         @endif
     </section>
+    <section>
+        @include('frontend.pages.phrase.sections.fingers-placement.master')
+    </section>
 @endsection
 
 @section('scripts')
