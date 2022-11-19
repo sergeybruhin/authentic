@@ -1,8 +1,9 @@
-<?php
+<?php /** @noinspection PhpPureAttributeCanBeAddedInspection */
 
 namespace App\Nova;
 
 use App\Models\PhraseCollection as PhraseCollectionModel;
+use App\Nova\Actions\ShuffleCollectionOrderAction;
 use Benjacho\BelongsToManyField\BelongsToManyField;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
@@ -56,7 +57,7 @@ class PhraseCollection extends Resource
      * @param Request $request
      * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make(__('ID'), 'id')
@@ -80,6 +81,13 @@ class PhraseCollection extends Resource
                     ];
                 }),
 
+        ];
+    }
+
+    public function actions(Request $request): array
+    {
+        return [
+            new ShuffleCollectionOrderAction,
         ];
     }
 
