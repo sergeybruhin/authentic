@@ -4,8 +4,8 @@
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Учимся писать буквый и слова</h1>
-                    <h2 class="lead text-muted">Простой и удобный тренажёр печати на комьютере для детей со сложностями
+                    <h1 class="fw-light">Учимся писать буквы и слова</h1>
+                    <h2 class="lead text-muted">Простой и удобный тренажёр печати на компьютере для детей со сложностями
                         восприятия речи</h2>
                     <p>
                         <a href="{{ route('wordCollections.index') }}" class="btn btn-lg btn-primary my-2 px-5 me-4"

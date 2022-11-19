@@ -17,5 +17,5 @@
     </div>
 
     <h5 class="t-phraseCollectionPreview__title">{{ Str::upper($phraseCollection->name) }}</h5>
-    <span class="t-phraseCollectionPreview__phraseCount">Слов: {{ $phraseCollection->phrases->count() }}</span>
+    <span class="t-phraseCollectionPreview__phraseCount">Фраз: {{ $phraseCollection->phrases->count() }}</span>
 </a>

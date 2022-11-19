@@ -2,9 +2,12 @@
 @section('header')
     <section style="background-color: #b8d9e1">
         <div class="py-5 text-center container">
-            <div class="row py-lg-5">
+            <div class="row pt-lg-5 pb-lg-4">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Коллекции</h1>
+                    <h1 class="fw-light">Слова</h1>
+                    <p>В каждой коллекции слов может быть разное количество элементов. Для начала рекомендуем взять коллекцию
+                        по знакомой ребёнку теме с небольшим количеством карточек и придумать сладкую награду за
+                        прохождения всех карточек. </p>
                 </div>
             </div>
         </div>
