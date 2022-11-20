@@ -1,21 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale())}}" class="h-full bg-gray-50 js-focus-visible"
+      prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
-    <link rel="manifest" href="/site.webmanifest?v=1">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#ff0000">
-    <link rel="shortcut icon" href="/favicon.ico?v=1">
-    <meta name="apple-mobile-web-app-title" content="Authentic">
-    <meta name="application-name" content="Authentic">
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="theme-color" content="#ffffff">
+    @include('frontend.partials.favicons')
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -56,16 +48,7 @@
 
 </main>
 
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
-    </div>
-</footer>
+@include('frontend.widgets.footer.footer')
 @yield('scripts')
 </body>
 </html>

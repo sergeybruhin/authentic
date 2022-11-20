@@ -1,8 +1,7 @@
 <div class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff5ab!important;">
     <div class="container">
         <a href="/" class="navbar-brand d-flex align-items-center">
-            <i class="fas fa-angle-double-up me-3"></i>
-            <strong style="text-decoration: none;">Authentic</strong>
+            <span class="w-navbar__logo"></span>
         </a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="{{ route('admin.home') }}" class="nav-link px-2 link-secondary">Панель</a></li>

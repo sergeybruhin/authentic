@@ -24,9 +24,11 @@
     {{-- СЛОВА--}}
     <section class="pb-4" style="background-color: #b8d9e1">
         <div class="container py-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h3 class="mb-5 h1" style="color: #0e6283">Слова</h3>
+            <div class="row text-center">
+                <div class="col mx-auto text-center" style="max-width: 600px">
+                    <h3 class=" h1" style="color: #0e6283">Слова</h3>
+                    <p class="mb-5">Первым делом можно попробовать дать ребёнку печатать коллекции слов. За каждое успешно
+                        пройденное испытание рекомендуем дать сладость или другую награду.</p>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -48,9 +50,10 @@
     {{-- ФРАЗЫ--}}
     <section class="pb-4" style="background-color: #b8cce1">
         <div class="container py-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h3 class="mb-5 h1" style="color: #0e6283">Фразы</>
+            <div class="row text-center">
+                <div class="col text-center m-auto" style="max-width: 600px">
+                    <h3 class=" h1" style="color: #0e6283">Словосочетания и фразы</h3>
+                    <p class="mb-5">Как только освоитесь с нашим простым интерфейсом и ручки привыкнут к клавиатуре, попробуйте печатать более сложные сочетания слов. </p>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

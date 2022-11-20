@@ -55,15 +55,6 @@
 
 @yield('content')
 
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Наверх</a>
-        </p>
-        <p class="mb-1">Словечки (TinyTalk.ru) — Учимся писать буквы и слова без ошибок. Тренажёр печати для детей.</p>
-        {{--        <p class="mb-0"></p>--}}
-    </div>
-</footer>
 
 @yield('scripts')
 <script>
